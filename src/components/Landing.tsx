@@ -27,6 +27,16 @@ export const Landing = () => {
                         <img src={ghost3} style={{width:'100%', height:'auto'}} alt=""/>
                     </div>
                 </div>
+                <div className={classes.form}>
+                    <div className={classes.button}>
+                        <span>
+                            SOLD OUT - BUY ON OPENSEA
+                        </span>
+                    </div>
+                    <span className={classes.formtxt}>
+                        <span style={{color:"rgb(255, 98, 101)"}}>10,000</span> / 10,000 Minted
+                    </span>
+                </div>
             </div>
         </section>
     )
@@ -126,6 +136,35 @@ const useStyles = makeStyles((theme) =>
             "100%": {
               transform: "translatey(0px)"
             }
-          },
+        },
+        form: {
+            textAlign:'center',
+            maxWidth: '360px',
+            marginLeft: 'auto',
+            marginRight: 'auto'
+        },
+        button: {
+            marginBottom: '22px',
+            minWidth: '320px',
+            display: 'inline-block',
+            verticalAlign: 'top',
+            position: 'relative',
+            zIndex: 1,
+            fontSize:'12px',
+            letterSpacing: '1.2px',
+            padding: '25px 20px',
+            background: 'linear-gradient(0deg,#708eff 0%,#5579fe 100%)',
+            color: '#ffffff',
+            borderRadius:'36px',
+            fontWeight:'bold'
+        },
+        formtxt:{
+            color:'#fff',
+            fontSize:'15px',
+            fontWeight:'500',
+            letterSpacing: '1px',
+            position: 'relative',
+            zIndex: 1,
+        }
     })
 )
