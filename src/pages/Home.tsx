@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 import discord from '../assets/logo/discord.svg';
 import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
+import { Info } from '../components/Info';
 
 export const Home = () => {
     const classes = useStyles();
@@ -37,6 +38,7 @@ export const Home = () => {
             </div>
             <div style={{display:'block'}}>
                 <Landing />
+                <Info />
             </div>
             {/* Main Page */}
         </div>
@@ -49,7 +51,8 @@ const useStyles = makeStyles((theme) =>
             overflow: 'hidden',
             position: 'relative',
             maxHeight: '100000px',
-            color: '#989898'
+            color: '#989898',
+            backgroundColor:'#000',
         },
         navbar: {
             position: 'absolute',
