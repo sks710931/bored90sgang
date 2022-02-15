@@ -1,11 +1,12 @@
 import { createStyles, makeStyles } from '@mui/styles';
 
 import { Landing } from "../components/Landing";
+import { Info } from '../components/Info';
+import { Goals } from '../components/Goals';
 import logo from '../assets/logo.png';
 import discord from '../assets/logo/discord.svg';
 import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
-import { Info } from '../components/Info';
 
 export const Home = () => {
     const classes = useStyles();
@@ -39,6 +40,7 @@ export const Home = () => {
             <div style={{display:'block'}}>
                 <Landing />
                 <Info />
+                <Goals />
             </div>
             {/* Main Page */}
         </div>

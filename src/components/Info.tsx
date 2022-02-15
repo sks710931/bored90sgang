@@ -9,26 +9,24 @@ import ghost3 from "../assets/ghost3.png";
 
 export const Info = () => {
     const classes = useStyles();
-    const scroll1 = {
-        infinite: true,
-        slidesToShow: 7,
-        slidesToScroll: 2,
-        autoplay: true,
-        speed: 6000,
-        autoplaySpeed: 6000,
-        swipeToSlide: false,
-        cssEase: "linear"
-    };
-    const scroll2 = {
+    const settings = {
+        dots: false,
+        arrows: false,
         infinite: true,
         slidesToShow: 7,
         slidesToScroll: 2,
         autoplay: true,
         speed: 5000,
-        rtl: true,
         autoplaySpeed: 5000,
         swipeToSlide: false,
         cssEase: "linear"
+    }
+    const scroll1 = {
+        ...settings,
+    };
+    const scroll2 = {
+        ...settings,
+        rtl: true,
     };
     return (
         <>
