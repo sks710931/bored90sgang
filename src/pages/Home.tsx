@@ -8,6 +8,7 @@ import discord from '../assets/logo/discord.svg';
 import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
 import { Rarity } from '../components/Rarity';
+import { Items } from '../components/Items';
 
 export const Home = () => {
     const classes = useStyles();
@@ -43,6 +44,7 @@ export const Home = () => {
                 <Info />
                 <Goals />
                 <Rarity />
+                <Items />
             </div>
             {/* Main Page */}
         </div>

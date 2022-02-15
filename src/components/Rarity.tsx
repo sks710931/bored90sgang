@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) =>
             padding: '94px 0',
             position: 'relative',
             zIndex: 1,
-            minHeight: '540px',
+            minHeight: '600px',
             maxHeight: '100000px',
         },
         container: {
