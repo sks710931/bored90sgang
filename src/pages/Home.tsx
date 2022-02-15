@@ -7,6 +7,7 @@ import logo from '../assets/logo.png';
 import discord from '../assets/logo/discord.svg';
 import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
+import { Rarity } from '../components/Rarity';
 
 export const Home = () => {
     const classes = useStyles();
@@ -41,6 +42,7 @@ export const Home = () => {
                 <Landing />
                 <Info />
                 <Goals />
+                <Rarity />
             </div>
             {/* Main Page */}
         </div>

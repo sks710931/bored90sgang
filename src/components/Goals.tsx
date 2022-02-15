@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) =>
         container: {
             position: 'relative',
             top: '150px',
-            minHeight: '840px',
+            minHeight: '640px',
             maxHeight: '10000px'
         },
         heading: {
