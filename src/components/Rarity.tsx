@@ -84,7 +84,6 @@ const useStyles = makeStyles((theme) =>
             fontSize: '12px',
             textTransform: 'uppercase',
             letterSpacing: '2.4px',
-            paddingTop: '160px'
         },
         heading: {
             fontSize: '90px',

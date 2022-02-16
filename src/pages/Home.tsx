@@ -11,6 +11,7 @@ import discord from '../assets/logo/discord.svg';
 import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
 import { Teams } from '../components/Teams';
+import { Faq } from '../components/Faq';
 
 export const Home = () => {
     const classes = useStyles();
@@ -49,6 +50,7 @@ export const Home = () => {
                 <Items />
                 <Meet />
                 <Teams />
+                <Faq />
             </div>
             {/* Main Page */}
         </div>

@@ -38,6 +38,7 @@ export const Items = () => {
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        pauseOnHover: false,
         nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
         prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />
       };
