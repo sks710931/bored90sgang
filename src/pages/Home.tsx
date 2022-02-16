@@ -12,6 +12,7 @@ import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
 import { Teams } from '../components/Teams';
 import { Faq } from '../components/Faq';
+import { Footer } from '../components/Footer';
 
 export const Home = () => {
     const classes = useStyles();
@@ -52,7 +53,7 @@ export const Home = () => {
                 <Teams />
                 <Faq />
             </div>
-            {/* Main Page */}
+            <Footer />
         </div>
     )
 }

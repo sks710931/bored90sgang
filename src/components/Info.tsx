@@ -13,6 +13,7 @@ export const Info = () => {
         dots: false,
         arrows: false,
         infinite: true,
+        pauseOnHover: false,
         slidesToShow: 7,
         slidesToScroll: 2,
         autoplay: true,
