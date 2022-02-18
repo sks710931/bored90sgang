@@ -1,4 +1,6 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,10 +35,11 @@ function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
 
 export const Items = () => {
     const classes = useStyles();
+    const mdMatches = useMediaQuery('(min-width:1000px)');
     const settings = {
         dots: true,
         infinite: false,
-        slidesToShow: 3,
+        slidesToShow: mdMatches ? 3 : 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
         prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />
@@ -114,6 +117,7 @@ const useStyles = makeStyles((theme) =>
             minHeight: '500px'
         },
         container: {
+            width: '80%',
             maxWidth: '1260px',
             padding: '0 20px',
             margin: '0 auto',

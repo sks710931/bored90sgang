@@ -1,5 +1,7 @@
+/* eslint-disable no-useless-computed-key */
 import * as React from 'react';
 import { createStyles, makeStyles } from '@mui/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -14,6 +16,7 @@ export const Faq = () => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState<string | false>(false);
 
+    const mdMatches = useMediaQuery('(max-width:768px)');
     const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
         setExpanded(isExpanded ? panel : false);
     };
@@ -24,7 +27,13 @@ export const Faq = () => {
                     <img src={faqbg} alt="" className={classes.bg}/>
                     <div className={classes.heading}>
                         <div className={classes.title}>Haunt me more!</div>
-                        <div className={classes.faqs}>FREQUENTLY <br /> ASKED QUESTIONS</div>
+                        {
+                            mdMatches ? (
+                                <div className={classes.faqs}>F.A.Q.</div>
+                            ) : (
+                                <div className={classes.faqs}>FREQUENTLY <br /> ASKED QUESTIONS</div>
+                            )
+                        }
                         <div className={classes.desc}>
                         Each Baby Ghost is unique and programmatically generated from over 140 possible traits, including backgrounds, skins, eyes, disguises, accessories...
                         </div>
@@ -277,7 +286,10 @@ const useStyles = makeStyles((theme) =>
             textAlign: 'right',
             padding: 0,
             color: '#fff',
-            position: 'relative'
+            position: 'relative',
+            ['@media (max-width:768px)']: {
+                textAlign: 'center',
+            }
         },
         title: {
             color: '#a88dff',
@@ -290,12 +302,21 @@ const useStyles = makeStyles((theme) =>
             fontSize: '84px',
             lineHeight: '1.095',
             marginBottom: '11px',
-            letterSpacing: '2.2px'
+            letterSpacing: '2.2px',
+            ['@media (max-width:768px)']: {
+                fontSize: '55px',
+            },
+            ['@media (max-width:1100px)']: {
+                fontSize: '65px',
+            },
         },
         desc:{
             maxWidth: '400px',
             margin: '0 0 0 auto',
-            lineHeight: '1.5'
+            lineHeight: '1.5',
+            ['@media (max-width:768px)']: {
+                margin: '0 auto 0 auto',
+            },
         },
         faqitem: {
             margin: '0px auto 0px auto',

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
 
 import bg from "../assets/bg2.png";
@@ -59,6 +60,11 @@ const useStyles = makeStyles((theme) =>
             width: '100%',
             maxHeight: '740px',
             zIndex: 0,
+            ['@media (max-width:768px)']: {
+                width: 'auto',
+                maxHeight: '1040px',
+                objectFit: 'cover'
+            }
         },
         container: {
             position: 'relative',
@@ -86,13 +92,22 @@ const useStyles = makeStyles((theme) =>
             verticalAlign: 'top',
             marginTop: '0px',
             color: '#fff',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            ['@media (max-width:768px)']: {
+                fontSize: '60px',
+            }
         },
         headingwrap: {
             maxWidth: '580px',
             margin: '0 auto',
             padding: '30px 0',
             lineHeight: '24px',
+            ['@media (max-width:768px)']: {
+                maxWidth: '480px',
+            },
+            ['@media (max-width:480px)']: {
+                maxWidth: '360px',
+            }
         },
         goallist: {
             maxWidth: '1200px',
@@ -102,12 +117,18 @@ const useStyles = makeStyles((theme) =>
             color: '#fff',
             margin: '0 auto',
             paddingTop: '9px',
-            listStyle: 'none'
+            listStyle: 'none',
+            ['@media (max-width:768px)']: {
+                maxWidth: '350px',
+            }
         },
         goalitem: {
             width: '50%',
             marginBottom: '30px',
             position: 'relative',
+            ['@media (max-width:768px)']: {
+                width: '100%',
+            }
         },
         perc: {
             fontSize: '54px',

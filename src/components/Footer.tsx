@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
 
 import logo from '../assets/logo.png';
@@ -41,14 +42,14 @@ export const Footer = () => {
             </div>
             <div className={classes.terms}>
                 <ul className={classes.copyright}>
-                    <li style={{textAlign:'left',width:'33.33%'}}>
-                    Copyright © Baby Ghosts 2021
+                    <li className={classes.bottom}>
+                        Copyright © Baby Ghosts 2021
                     </li>
-                    <li style={{width:'33.33%', color:'#fff'}}>
-                    Terms of Use
+                    <li className={classes.bottom} style={{color:'#fff'}}>
+                        Terms of Use
                     </li>
-                    <li style={{textAlign:'right',width:'33.33%'}}>
-                    All Rights Reserved
+                    <li className={classes.bottom}>
+                        All Rights Reserved
                     </li>
                 </ul>
             </div>
@@ -86,7 +87,11 @@ const useStyles = makeStyles((theme) =>
             alignItems: 'center',
             maxWidth: '1170px',
             margin: '0 auto',
-            padding: '0 20px'
+            padding: '0 20px',
+            ['@media (max-width:768px)']: {
+                maxWidth: '200px',
+                justifyContent: 'center'
+            },
         },
         logo: {
             width: '59px',
@@ -98,6 +103,9 @@ const useStyles = makeStyles((theme) =>
             flexWrap: 'wrap',
             justifyContent: 'center',
             listStyle: 'none',
+            ['@media (max-width:768px)']: {
+                paddingInlineStart: '0px'
+            },
         },
         btns: {
             minWidth: '170px',
@@ -105,6 +113,7 @@ const useStyles = makeStyles((theme) =>
             display: 'flex',
             color: '#fff',
             marginRight: '10px',
+            marginBottom: '10px',
             textTransform: 'uppercase',
             fontWeight: '400',
             border: '1px solid #5579fe',
@@ -112,14 +121,17 @@ const useStyles = makeStyles((theme) =>
             position: 'relative',
             letterSpacing: '0.9px',
             borderRadius: '36px',
-            justifyContent:'center'
+            justifyContent:'center',
         },
         sociallist: {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'flex-end',
             alignItems: 'center',
-            marginRight: '-10px'
+            marginRight: '-10px',
+            ['@media (max-width:768px)']: {
+                paddingInlineStart: '0px'
+            },
         },
         socialitem: {
             marginRight: '10px',
@@ -136,15 +148,28 @@ const useStyles = makeStyles((theme) =>
             maxWidth: '1170px',
             padding: '20px 0px',
             margin: '0 auto',
-        },
-        copyright: {
             display: 'flex',
             flexWrap: 'wrap',
+            ['@media (max-width:768px)']: {
+                width: '150px'
+            },
+        },
+        copyright: {
+            // display: 'flex',
+            // flexWrap: 'wrap',
             fontSize: '12px',
             color: '#888',
             fontWeight: '500',
             lineHeight: '1.444',
             listStyle: 'none',
-            paddingLeft:'0px'
+            paddingLeft:'0px',
+        },
+        bottom: {
+            textAlign:'left',width:'33.33%',
+            ['@media (max-width:768px)']: {
+                width: '100%',
+                textAlign: 'center',
+                marginBottom: '10px'
+            },
         }
     }))

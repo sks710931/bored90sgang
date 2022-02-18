@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
 
 import rare from "../assets/rare.png";
@@ -14,12 +15,12 @@ export const Rarity = () => {
                             <img src={rare} className={classes.bg} alt=""/>
                             <div className={classes.rarity}>
                                 <div className={classes.txtbox}>
+                                    <img src={rareghost} className={classes.ghost} alt=""/>
+                                </div>
+                                <div className={classes.txtbox} style={{alignSelf:'center'}}>
                                     <span className={classes.title}>An apparition from preschool!</span>
                                     <h1 className={classes.heading}>RARITY</h1>
-                                    <p style={{maxWidth: '360px'}}>Find your kindred spirit among 10 000 of possible Baby Ghost combinations! Each Baby Ghost is unique.</p>
-                                </div>
-                                <div className={classes.txtbox}>
-                                    <img src={rareghost} className={classes.ghost} alt=""/>
+                                    <p className={classes.p}>Find your kindred spirit among 10 000 of possible Baby Ghost combinations! Each Baby Ghost is unique.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +67,12 @@ const useStyles = makeStyles((theme) =>
         ghost: {
             width: '360px',
             height: 'auto',
-            paddingLeft: '40px'
+            paddingLeft: '40px',
+            ['@media (max-width:900px)']: {
+                width: '280px',
+                margin: '0 auto',
+                paddingLeft: '0px',
+            }
         },
         rarity: {
             display: 'flex',
@@ -77,7 +83,11 @@ const useStyles = makeStyles((theme) =>
             width: '50%',
             textAlign: 'left',
             paddingTop: '45px',
-            justifyContent: 'flex-start'
+            justifyContent: 'flex-start',
+            ['@media (max-width:900px)']: {
+                width: '100%',
+                textAlign: 'center',
+            }
         },
         title: {
             color: '#ffbc42',
@@ -92,6 +102,12 @@ const useStyles = makeStyles((theme) =>
             marginTop: '0px',
             color: '#fff',
             textTransform: 'uppercase'
+        },
+        p: {
+            maxWidth: '360px',
+            ['@media (max-width:900px)']: {
+                margin: '0 auto',
+            }
         }
     })
 )

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
 
 import teambg from "../assets/teambg.png";
@@ -40,7 +41,10 @@ const useStyles = makeStyles((theme) =>
             position: 'relative',
             zIndex: 1,
             textAlign: 'center',
-            minHeight: '740px'
+            minHeight: '740px',
+            ['@media (max-width:7680px)']: {
+                minHeight: '440px',
+            }
         },
         container: {
             padding: '0 20px',
@@ -56,7 +60,13 @@ const useStyles = makeStyles((theme) =>
             top: '-150px',
             zIndex: -1,
             width: '100%',
-            height: 'auto'
+            height: 'auto',
+            ['@media (max-width:800px)']: {
+                top: '-110px',
+                width: 'auto',
+                objectFit: 'cover',
+                maxHeight: '600px',
+            }
         },
         title: {
             marginBottom: '21px',
@@ -71,7 +81,10 @@ const useStyles = makeStyles((theme) =>
             color:'#fff',
             fontWeight: '400',
             textTransform:'uppercase',
-            letterSpacing:'2.2px'
+            letterSpacing:'2.2px',
+            ['@media (max-width:768px)']: {
+                fontSize: '60px',
+            }
         },
         ghosts: {
             marginTop: '-20px',
@@ -89,6 +102,9 @@ const useStyles = makeStyles((theme) =>
             position:'relative',
             zIndex:3,
             transition:'opacity .5s ease-in-out,transform .5s ease-in-out,-webkit-transform .5s ease-in-out',
+            ['@media (max-width:768px)']: {
+                width: '168px',
+            }
         },
         ghost2: {
             opacity:1,
@@ -96,8 +112,11 @@ const useStyles = makeStyles((theme) =>
             width: '340px',
             position:'relative',
             zIndex:4,
-            margin:'0 -124px 0 -124px',
+            margin:'0 -104px 0 -104px',
             transition:'opacity .5s ease-in-out,transform .5s ease-in-out,-webkit-transform .5s ease-in-out',
+            ['@media (max-width:768px)']: {
+                width: '180px',
+            }
         },
         "@keyframes dance": {
             "0%": {

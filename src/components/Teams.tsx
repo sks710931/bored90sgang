@@ -1,4 +1,9 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import p1 from "../assets/1.png";
 import p2 from "../assets/2.png";
@@ -6,8 +11,39 @@ import p3 from "../assets/3.png";
 import discord from "../assets/logo/discord.svg";
 import twitter from "../assets/logo/twitter.svg";
 
+function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block"}}
+        onClick={onClick}
+      />
+    );
+}
+  
+function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+}
+
 export const Teams = () => {
     const classes = useStyles();
+    const mdMatches = useMediaQuery('(min-width:768px)');
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: mdMatches ? 3 : 1,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
+        prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />
+      };
 
     const item = (
         image: string | undefined,
@@ -38,14 +74,31 @@ export const Teams = () => {
     return (
         <div className={classes.wrapper}>
             <div className={classes.container}>
-                <div className={classes.posts}>
-                    {item(p1, "Boss", '#a3e869', 'Lokii', 'Co-founder and father', 'of the Baby Ghosts')}
-                    {item(p2, "The crpto expert", "#ff705c", '0XBAGUETTE', 'Co-founder and father', 'of the Baby Ghosts')}
-                    {item(p3, "THE ARTIST", "#41ada7", 'CHARLES', 'Creator and God',' of the Baby Ghosts')}
-                    {item(p1, "Boss", '#a3e869', 'Lokii', 'Co-founder and father', 'of the Baby Ghosts')}
-                    {item(p2, "The crpto expert", "#ff705c", '0XBAGUETTE', 'Co-founder and father', 'of the Baby Ghosts')}
-                    {item(p3, "THE ARTIST", "#41ada7", 'CHARLES', 'Creator and God',' of the Baby Ghosts')}
-                </div>
+                {
+                    !mdMatches ? (
+                        <Slider {...settings}>
+                            {item(p1, "Boss", '#a3e869', 'Lokii', 'Co-founder and father', 'of the Baby Ghosts')}
+                            {item(p2, "The crpto expert", "#ff705c", '0XBAGUETTE', 'Co-founder and father', 'of the Baby Ghosts')}
+                            {item(p3, "THE ARTIST", "#41ada7", 'CHARLES', 'Creator and God',' of the Baby Ghosts')}
+                            {item(p1, "Boss", '#a3e869', 'Lokii', 'Co-founder and father', 'of the Baby Ghosts')}
+                            {item(p2, "The crpto expert", "#ff705c", '0XBAGUETTE', 'Co-founder and father', 'of the Baby Ghosts')}
+                            {item(p3, "THE ARTIST", "#41ada7", 'CHARLES', 'Creator and God',' of the Baby Ghosts')}
+                        </Slider>
+                    ) : (
+                        <>
+                            <div className={classes.posts}>
+                                {item(p1, "Boss", '#a3e869', 'Lokii', 'Co-founder and father', 'of the Baby Ghosts')}
+                                {item(p2, "The crpto expert", "#ff705c", '0XBAGUETTE', 'Co-founder and father', 'of the Baby Ghosts')}
+                                {item(p3, "THE ARTIST", "#41ada7", 'CHARLES', 'Creator and God',' of the Baby Ghosts')}
+                            </div>
+                            <div className={classes.posts}>
+                                {item(p1, "Boss", '#a3e869', 'Lokii', 'Co-founder and father', 'of the Baby Ghosts')}
+                                {item(p2, "The crpto expert", "#ff705c", '0XBAGUETTE', 'Co-founder and father', 'of the Baby Ghosts')}
+                                {item(p3, "THE ARTIST", "#41ada7", 'CHARLES', 'Creator and God',' of the Baby Ghosts')}
+                            </div>
+                        </>
+                    )
+                }
             </div>
         </div>
     )
@@ -58,7 +111,10 @@ const useStyles = makeStyles((theme) =>
             paddingBottom:'70px',
             position:'relative',
             zIndex: '20',
-            minHeight: '600px'
+            minHeight: '600px',
+            ['@media (max-width:768px)']: {
+                minHeight: '500px',
+            }
         },
         container: {
             maxWidth: '1375px',
@@ -66,22 +122,37 @@ const useStyles = makeStyles((theme) =>
             zIndex: '4',
             padding: '0 20px',
             margin: '0 auto',
+            ['@media (max-width:768px)']: {
+                width: '80%',
+                maxWidth: '600px'
+            },
+            ['@media (max-width:450px)']: {
+                width: '80%',
+                maxWidth: '380px'
+            }
         },
         posts: {
             display: 'flex',
-            flexWrap: 'wrap',
             padding: 0,
             textAlign: 'center'
         },
         item: {
             marginBottom: '70px',
             padding: '0 15px',
-            width: '30%'
+            width: '30%',
+            ['@media (max-width:768px)']: {
+                width: '80%',
+            }
         },
         slide: {
             maxWidth: '280px',
             margin: '0 auto',
-            textAlign: 'center'
+            textAlign: 'center',
+            ['@media (max-width:768px)']: {
+                width: '80%',
+                maxWidth: '360px',
+                textAlign: '-webkit-center'
+            }
         },
         img:{
             width: '140px',
@@ -97,7 +168,7 @@ const useStyles = makeStyles((theme) =>
             letterSpacing:'2.2px'
         },
         heading: {
-            fontSize: '48px',
+            fontSize: '38px',
             marginBottom: '9px',
             color: '#fff',
             fontWeight: '400',
