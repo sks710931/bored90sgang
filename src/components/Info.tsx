@@ -1,4 +1,6 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,12 +11,13 @@ import ghost3 from "../assets/ghost3.png";
 
 export const Info = () => {
     const classes = useStyles();
+    const mdMatches = useMediaQuery('(min-width:768px)');
     const settings = {
         dots: false,
         arrows: false,
         infinite: true,
         pauseOnHover: false,
-        slidesToShow: 7,
+        slidesToShow: mdMatches ? 7 : 4,
         slidesToScroll: 2,
         autoplay: true,
         speed: 5000,
@@ -49,46 +52,46 @@ export const Info = () => {
         </div>
         <div>
         <Slider {...scroll1}>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
         </Slider>
         <Slider {...scroll2}>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
         </Slider>
         <Slider {...scroll1}>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost1} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost2} style={{width:'360px', height:'auto'}} alt=""/>
-          <img src={ghost3} style={{width:'360px', height:'auto'}} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
+          <img src={ghost1} alt=""/>
+          <img src={ghost2} alt=""/>
+          <img src={ghost3} alt=""/>
         </Slider>
       </div>
       </>
@@ -122,11 +125,14 @@ const useStyles = makeStyles((theme) =>
             letterSpacing:'2.4px'
         },
         maintxt: {
-            fontSize: '90px',
+            fontSize: '84px',
             marginBottom: '11px',
             verticalAlign: 'top',
             marginTop: '0px',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            ['@media (max-width:768px)']: {
+                fontSize: '60px',
+            },
         },
         pdesc: {
             maxWidth:'579px',
