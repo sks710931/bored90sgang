@@ -1,4 +1,6 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
+import * as React from 'react';
 
 import { Landing } from "../components/Landing";
 import { Info } from '../components/Info';
@@ -12,10 +14,23 @@ import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
 import { Teams } from '../components/Teams';
 import { Faq } from '../components/Faq';
-import { Footer } from '../components/Footer';
+import { Footer } from '../components/Footer';  
 
 export const Home = () => {
     const classes = useStyles();
+    const welcomeRef = React.useRef<HTMLDivElement>(null);
+    const goalsRef = React.useRef<HTMLDivElement>(null);
+    const rareRef = React.useRef<HTMLDivElement>(null);
+    const teamRef = React.useRef<HTMLDivElement>(null);
+    const faqRef = React.useRef<HTMLDivElement>(null);
+
+    const executeScroll = (reff: React.RefObject<HTMLDivElement>) => {
+        if (reff.current) {
+            reff.current.scrollIntoView({
+                behavior: "smooth",
+              });
+          }
+    }
     return (
         <div className={classes.wrapper}>
             <div className={classes.navbar}>
@@ -23,11 +38,11 @@ export const Home = () => {
                     <img src={logo} className={classes.logo} alt="logo"/>
                     <div className={classes.nav}>
                         <ul className={classes.menulist}>
-                            <li className={classes.menuitem}>Welcome</li>
-                            <li className={classes.menuitem}>Goals</li>
-                            <li className={classes.menuitem}>Rarity</li>
-                            <li className={classes.menuitem}>Team</li>
-                            <li className={classes.menuitem}>Faq</li>
+                            <li className={classes.menuitem} onClick={() => executeScroll(welcomeRef)}>Welcome</li>
+                            <li className={classes.menuitem} onClick={() => executeScroll(goalsRef)}>Goals</li>
+                            <li className={classes.menuitem} onClick={() => executeScroll(rareRef)}>Rarity</li>
+                            <li className={classes.menuitem} onClick={() => executeScroll(teamRef)}>Team</li>
+                            <li className={classes.menuitem} onClick={() => executeScroll(faqRef)}>Faq</li>
                         </ul>
                         <ul className={classes.sociallist}>
                             <li className={classes.socialitem}>
@@ -44,14 +59,24 @@ export const Home = () => {
                 </div>
             </div>
             <div style={{display:'block'}}>
-                <Landing />
+                <div ref={welcomeRef}>
+                    <Landing />
+                </div>
                 <Info />
-                <Goals />
-                <Rarity />
+                <div ref={goalsRef}>
+                    <Goals />
+                </div>
+                <div ref={rareRef}>
+                    <Rarity />
+                </div>
                 <Items />
-                <Meet />
+                <div ref={teamRef}>
+                    <Meet />
+                </div>
                 <Teams />
-                <Faq />
+                <div ref={faqRef}>
+                    <Faq />
+                </div>
             </div>
             <Footer />
         </div>
@@ -82,7 +107,7 @@ const useStyles = makeStyles((theme) =>
             alignItems: 'center',
             padding: '0 30px 0 30px',
             maxWidth: '1350px',
-            margin: '0 45px',
+            margin: '0 auto',
         },
         logo: {
             width: '67px',
@@ -90,9 +115,12 @@ const useStyles = makeStyles((theme) =>
         },
         nav: {
             display: 'flex',
-            flexWrap: 'wrap',
             alignItems: 'center',
-            width: 'calc(100% - 67px)'
+            width: 'calc(100% - 67px)',
+            flex: 1,
+            ['@media (max-width:768px)']: {
+                justifyContent: 'end'
+            }
         },
         menulist: {
             display: 'flex',
@@ -101,8 +129,11 @@ const useStyles = makeStyles((theme) =>
             fontWeight: '700',
             fontFamily: 'inter',
             paddingLeft: '38px',
-            width: '80%',
-            textTransform:'uppercase'
+            width: 'calc(80% - 38px)',
+            textTransform:'uppercase',
+            ['@media (max-width:768px)']: {
+                display: 'none'
+            }
         },
         menuitem: {
             marginRight: '30px',
@@ -112,10 +143,9 @@ const useStyles = makeStyles((theme) =>
         },
         sociallist: {
             display: 'flex',
-            flexWrap: 'wrap',
             justifyContent: 'flex-end',
             alignItems: 'center',
-            marginRight: '-10px'
+            marginRight: '-10px',
         },
         socialitem: {
             marginRight: '10px',
