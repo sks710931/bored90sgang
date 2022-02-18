@@ -86,6 +86,7 @@ export const Home = () => {
 const useStyles = makeStyles((theme) =>
     createStyles({
         wrapper: {
+            minWidth: '380px',
             overflow: 'hidden',
             position: 'relative',
             maxHeight: '100000px',

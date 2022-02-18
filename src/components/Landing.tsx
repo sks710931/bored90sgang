@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
 
 import bg from '../assets/bg.png';
@@ -48,6 +49,9 @@ const useStyles = makeStyles((theme) =>
             position: 'relative',
             padding: '146px 0 57px',
             zIndex: 1,
+            ['@media (max-width:768px)']: {
+                paddingBottom: '0px'
+            }
         },
         container: {
             padding: '0 20px',
@@ -56,6 +60,9 @@ const useStyles = makeStyles((theme) =>
             maxWidth: '1350px',
             minHeight: '640px',
             maxHeight: '10000px',
+            ['@media (max-width:768px)']: {
+                minHeight: '540px'
+            }
         },
         bg:{
             position: 'absolute',
@@ -76,13 +83,6 @@ const useStyles = makeStyles((theme) =>
             height: '100%',
             background:'linear-gradient(180deg,rgba(0,0,0,0) 0%,black 70%)'
         },
-        txt: {
-            marginTop: '0px',
-            width: '100%',
-            position: 'absolute',
-            zIndex: 2,
-            textAlign: 'center'
-        },
         welcome: {
             color: '#ff6265',
             fontSize: '12px',
@@ -98,13 +98,27 @@ const useStyles = makeStyles((theme) =>
             verticalAlign: 'top',
             marginTop: '0px',
             color: '#fff',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            ['@media (max-width:768px)']: {
+                fontSize: '60px',
+            }
+        },
+        txt: {
+            marginTop: '0px',
+            marginBottom: '-150px',
+            width: '100%',
+            position: 'relative',
+            zIndex: 2,
+            textAlign: 'center',
+            ['@media (max-width:768px)']: {
+                marginBottom: '-85px',
+            }
         },
         ghosts: {
+            marginTop: '-30px',
             marginBottom: '29px',
             transform:'none',
             display:'flex',
-            flexWrap:'wrap',
             alignItems:'flex-end',
             justifyContent:'center',
             paddingTop: '50px',
@@ -116,6 +130,9 @@ const useStyles = makeStyles((theme) =>
             position:'relative',
             zIndex:3,
             transition:'opacity .5s ease-in-out,transform .5s ease-in-out,-webkit-transform .5s ease-in-out',
+            ['@media (max-width:768px)']: {
+                width: '226px',
+            }
         },
         ghost2: {
             opacity:1,
@@ -125,6 +142,10 @@ const useStyles = makeStyles((theme) =>
             zIndex:4,
             margin:'0 -294px 0 -274px',
             transition:'opacity .5s ease-in-out,transform .5s ease-in-out,-webkit-transform .5s ease-in-out',
+            ['@media (max-width:768px)']: {
+                width: '276px',
+                margin:'0 -164px 0 -164px',
+            }
         },
         "@keyframes dance": {
             "0%": {
@@ -156,7 +177,10 @@ const useStyles = makeStyles((theme) =>
             background: 'linear-gradient(0deg,#708eff 0%,#5579fe 100%)',
             color: '#ffffff',
             borderRadius:'36px',
-            fontWeight:'bold'
+            fontWeight:'bold',
+            ['@media (max-width:390px)']: {
+                padding: '25px 10px',
+            }
         },
         formtxt:{
             color:'#fff',
