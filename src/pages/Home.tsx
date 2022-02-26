@@ -117,13 +117,14 @@ const useStyles = makeStyles((theme) =>
         nav: {
             display: 'flex',
             alignItems: 'center',
-            width: 'calc(100% - 67px)',
+            width: '100%',
             flex: 1,
             ['@media (max-width:768px)']: {
                 justifyContent: 'end'
             }
         },
         menulist: {
+            color: '#000',
             display: 'flex',
             flexWrap: 'wrap',
             fontSize: '11px',

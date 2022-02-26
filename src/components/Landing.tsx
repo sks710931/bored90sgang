@@ -1,22 +1,20 @@
 /* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from '@mui/styles';
 
-import bg from '../assets/bg.png';
 import ghost1 from '../assets/ghost1.png';
 import ghost2 from '../assets/ghost2.png';
 import ghost3 from '../assets/ghost3.png';
+import bgvideo from '../assets/bg.mp4';
 
 export const Landing = () => {
     const classes = useStyles();
     return (
         <section className={classes.banner}>
             <div className={classes.container}>
-                <img src={bg} className={classes.bg} alt=""/>
+                <video autoPlay muted loop className={classes.bg}>
+                    <source src={bgvideo} type="video/mp4" />
+                </video>
                 <div className={classes.grad}></div>
-                <div className={classes.txt}>
-                    <span className={classes.welcome}>Welcome to</span>
-                    <h1 className={classes.title}>Baby Ghosts</h1>
-                </div>
                 <div className={classes.ghosts}>
                     <div className={classes.ghost1}>
                         <img src={ghost1} style={{width:'100%', height:'auto'}} alt=""/>
@@ -67,7 +65,7 @@ const useStyles = makeStyles((theme) =>
         bg:{
             position: 'absolute',
             width: '100%',
-            minHeight: '90vh',
+            minHeight: '100vh',
             top: 0,
             left: 0,
             right: 0,
@@ -83,37 +81,6 @@ const useStyles = makeStyles((theme) =>
             height: '100%',
             background:'linear-gradient(180deg,rgba(0,0,0,0) 0%,black 70%)'
         },
-        welcome: {
-            color: '#ff6265',
-            fontSize: '12px',
-            marginBottom: '12px',
-            textTransform: 'uppercase',
-            letterSpacing: '2.4px',
-            fontWeight: '700',
-            textAlign: 'center'
-        },
-        title: {
-            fontSize: '90px',
-            marginBottom: '-10px',
-            verticalAlign: 'top',
-            marginTop: '0px',
-            color: '#fff',
-            textTransform: 'uppercase',
-            ['@media (max-width:768px)']: {
-                fontSize: '60px',
-            }
-        },
-        txt: {
-            marginTop: '0px',
-            marginBottom: '-150px',
-            width: '100%',
-            position: 'relative',
-            zIndex: 2,
-            textAlign: 'center',
-            ['@media (max-width:768px)']: {
-                marginBottom: '-85px',
-            }
-        },
         ghosts: {
             marginTop: '-30px',
             marginBottom: '29px',
@@ -125,7 +92,6 @@ const useStyles = makeStyles((theme) =>
         },
         ghost1: {
             opacity:1,
-            animation:`$dance 4s ease-in-out infinite`,
             width: '390px',
             position:'relative',
             zIndex:3,
@@ -136,7 +102,6 @@ const useStyles = makeStyles((theme) =>
         },
         ghost2: {
             opacity:1,
-            animation:`$dance 4s ease-in-out infinite`,
             width: '462px',
             position:'relative',
             zIndex:4,
@@ -145,17 +110,6 @@ const useStyles = makeStyles((theme) =>
             ['@media (max-width:768px)']: {
                 width: '276px',
                 margin:'0 -164px 0 -164px',
-            }
-        },
-        "@keyframes dance": {
-            "0%": {
-              transform: "translatey(0px)"
-            },
-            "50%": {
-                transform: "translatey(-20px)"
-            },
-            "100%": {
-              transform: "translatey(0px)"
             }
         },
         form: {
