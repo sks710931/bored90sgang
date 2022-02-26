@@ -29,7 +29,7 @@ export const Landing = () => {
                 <div className={classes.form}>
                     <div className={classes.button}>
                         <span>
-                            SOLD OUT - BUY ON OPENSEA
+                            Mint Now
                         </span>
                     </div>
                     <span className={classes.formtxt}>
@@ -134,7 +134,8 @@ const useStyles = makeStyles((theme) =>
             verticalAlign: 'top',
             position: 'relative',
             zIndex: 1,
-            fontSize:'12px',
+            cursor:"pointer",
+            fontSize:'18px',
             letterSpacing: '1.2px',
             padding: '25px 20px',
             background: 'linear-gradient(0deg,#708eff 0%,#5579fe 100%)',
@@ -143,6 +144,9 @@ const useStyles = makeStyles((theme) =>
             fontWeight:'bold',
             ['@media (max-width:390px)']: {
                 padding: '25px 10px',
+            },
+            '&:hover':{
+                opacity: "0.7"
             }
         },
         formtxt:{
