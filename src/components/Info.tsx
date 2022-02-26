@@ -23,7 +23,6 @@ import r15 from "../assets/r15.png";
 import r16 from "../assets/r16.png";
 import r17 from "../assets/r17.png";
 import r18 from "../assets/r18.png";
-import { fontFamily } from "@mui/system";
 
 export const Info = () => {
   const classes = useStyles();
