@@ -65,11 +65,16 @@ const useStyles = makeStyles((theme) =>
         bg:{
             position: 'absolute',
             width: '100%',
-            minHeight: '100vh',
+            height: '100vh',
+            maxHeight: '920px',
             top: 0,
             left: 0,
             right: 0,
             zIndex: -1,
+            objectFit: 'fill',
+            ['@media (max-width:768px)']: {
+                maxHeight: '720px',
+            }
         },
         grad: {
             position: 'absolute',
@@ -79,10 +84,13 @@ const useStyles = makeStyles((theme) =>
             bottom: 0,
             zIndex: 1,
             height: '100%',
-            background:'linear-gradient(180deg,rgba(0,0,0,0) 0%,black 70%)'
+            background:'linear-gradient(180deg,rgba(0,0,0,0) 0%,black 60%)',
+            ['@media (min-width:1800px)']: {
+                background:'linear-gradient(180deg,rgba(0,0,0,0) 0%,black 80%)',
+            }
         },
         ghosts: {
-            marginTop: '-30px',
+            marginTop: '8%',
             marginBottom: '29px',
             transform:'none',
             display:'flex',
@@ -116,7 +124,8 @@ const useStyles = makeStyles((theme) =>
             textAlign:'center',
             maxWidth: '360px',
             marginLeft: 'auto',
-            marginRight: 'auto'
+            marginRight: 'auto',
+            marginTop: '60px'
         },
         button: {
             marginBottom: '22px',
