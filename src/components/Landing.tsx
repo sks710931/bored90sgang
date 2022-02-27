@@ -5,7 +5,7 @@ import ghost1 from '../assets/ghost1.png';
 import ghost2 from '../assets/ghost2.png';
 import ghost3 from '../assets/ghost3.png';
 import bgvideo from '../assets/bg.mp4';
-
+import banner from '../assets/banner.png';
 export const Landing = () => {
     const classes = useStyles();
     return (
@@ -15,6 +15,9 @@ export const Landing = () => {
                     <source src={bgvideo} type="video/mp4" />
                 </video>
                 <div className={classes.grad}></div>
+                <div className={classes.bannerText}>
+                    <img className={classes.bannerTextImg} src={banner} alt="" />
+                </div>
                 <div className={classes.ghosts}>
                     <div className={classes.ghost1}>
                         <img src={ghost1} style={{width:'100%', height:'auto'}} alt=""/>
@@ -43,6 +46,22 @@ export const Landing = () => {
 
 const useStyles = makeStyles((theme) =>
     createStyles({
+        bannerText:{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+        },
+        bannerTextImg:{
+            marginTop: '-4%',
+            width: 900,
+            ['@media (max-width:899px)']: {
+                width: 600,
+            },
+            ['@media (max-width:599px)']: {
+                width: 350,
+            }
+        },
         banner: {
             position: 'relative',
             padding: '146px 0 57px',
@@ -90,7 +109,7 @@ const useStyles = makeStyles((theme) =>
             }
         },
         ghosts: {
-            marginTop: '8%',
+            marginTop: '-12%',
             marginBottom: '29px',
             transform:'none',
             display:'flex',
