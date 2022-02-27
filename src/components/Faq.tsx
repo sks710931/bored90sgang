@@ -82,7 +82,7 @@ export const Faq = () => {
                             </Accordion>
                         </div>
                     </div>
-                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898', position:'relative'}}/>
                     <div className={classes.faqitem}>
                         <div className={classes.txt}>
                             <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -104,7 +104,7 @@ export const Faq = () => {
                             </Accordion>
                         </div>
                     </div>
-                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898', position:'relative'}}/>
                     <div className={classes.faqitem}>
                         <div className={classes.txt}>
                             <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -125,7 +125,7 @@ export const Faq = () => {
                             </Accordion>
                         </div>
                     </div>
-                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898', position:'relative'}}/>
                     <div className={classes.faqitem}>
                         <div className={classes.txt}>
                             <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
