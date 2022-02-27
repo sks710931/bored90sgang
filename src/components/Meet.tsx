@@ -14,8 +14,8 @@ export const Meet = () => {
                 <div className={classes.wrap}>
                     <img src={teambg} alt="" className={classes.bg}/>
                     <span className={classes.title}>Behind the scenes!</span>
-                    <div className={classes.heading}>MEET</div>
-                    <div className={classes.heading}>THE TEAM</div>
+                    <div className={classes.heading}>Meet The Team</div>
+                    {/* <div className={classes.heading}>The Team</div> */}
                 </div>
             </div>
             <div className={classes.ghosts}>
@@ -82,7 +82,6 @@ const useStyles = makeStyles((theme) =>
             fontSize: '74px',
             color:'#fff',
             fontWeight: '400',
-            textTransform:'uppercase',
             letterSpacing:'2.2px',
             ['@media (max-width:768px)']: {
                 fontSize: '30px',

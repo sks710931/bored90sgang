@@ -52,7 +52,7 @@ export const Info = () => {
       <div className={classes.wrapper}>
         <div className={classes.container}>
           <div className={classes.heading}>
-            <h1 className={classes.maintxt}>Bored 90's Gang</h1>
+            <h1 className={classes.maintxt}>Bored 90s Gang</h1>
             <span>
               <p className={classes.pdesc}>
                 Bored 90s Gang is a collection of 8896 NFTs, each representing a
@@ -141,7 +141,6 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "11px",
       verticalAlign: "top",
       marginTop: "10px",
-      textTransform: "uppercase",
       ["@media (max-width:768px)"]: {
         marginTop: "20px",
         fontSize: "30px",

@@ -12,7 +12,7 @@ export const Goals = () => {
                 <div className={classes.container}>
                     <div className={classes.heading}>
                         <span className={classes.title}>Mint Them All!</span>
-                        <h1 className={classes.goals}>Goals</h1>
+                        <h1 className={classes.goals}>Roadmap</h1>
                         <div className={classes.headingwrap}>
                             Baby Ghosts are crossing over! Now's your chance to grab yours before they reach the sky. Bred in a loving haunted household and eternally newborn, 10 000 Baby Ghosts are looking for a forever home in your wallet.
                         </div>
@@ -93,7 +93,6 @@ const useStyles = makeStyles((theme) =>
             verticalAlign: 'top',
             marginTop: '30px',
             color: '#fff',
-            textTransform: 'uppercase',
             ['@media (max-width:768px)']: {
                 fontSize: '45px',
                 marginTop: '15px',

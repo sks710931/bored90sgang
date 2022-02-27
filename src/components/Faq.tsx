@@ -26,16 +26,14 @@ export const Faq = () => {
                 <div className={classes.faqwrap}>
                     <img src={faqbg} alt="" className={classes.bg}/>
                     <div className={classes.heading}>
-                        <div className={classes.title}>Haunt me more!</div>
                         {
                             mdMatches ? (
                                 <div className={classes.faqs}>F.A.Q.</div>
                             ) : (
-                                <div className={classes.faqs}>FREQUENTLY <br /> ASKED QUESTIONS</div>
+                                <div className={classes.faqs}>Frequently <br /> Asked Questions</div>
                             )
                         }
                         <div className={classes.desc}>
-                        Each Baby Ghost is unique and programmatically generated from over 140 possible traits, including backgrounds, skins, eyes, disguises, accessories...
                         </div>
                     </div>
                     <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898', position:'relative'}}/>
@@ -48,7 +46,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>I.  </span>WHAT IS THE TOTAL SUPPLY OF BORED 90s GANG?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHAT IS THE TOTAL SUPPLY OF BORED 90s GANG?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -71,7 +69,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>II.  </span>WILL THERE BE A PRESALE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WILL THERE BE A PRESALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -92,7 +90,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>III.  </span>WHAT IS THE PRICE FOR ONE BORED 90s GANG NFT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHAT IS THE PRICE FOR ONE BORED 90s GANG NFT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -114,7 +112,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>IV.  </span>WHAT IS AN NFT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHAT IS AN NFT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -135,7 +133,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>V.  </span>WHAT DAY DOES BORED 90s GANG LAUNCH?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHAT DAY DOES BORED 90s GANG LAUNCH?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -156,7 +154,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VI.  </span>HOW CAN I GET ONE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}> </span>HOW CAN I GET ONE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -177,7 +175,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VII.  </span>WHAT IS METAMASK?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHAT IS METAMASK?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -198,7 +196,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VIII.  </span>CAN I MINT USING MY PHONE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>CAN I MINT USING MY PHONE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -221,7 +219,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>IX.  </span>HOW CAN I GET ONTO THE WHITELIST?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>HOW CAN I GET ONTO THE WHITELIST?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -242,7 +240,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>X.  </span>HOW MANY PEOPLE WILL BE ALLOWED IN THE WHITELIST SALE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}> </span>HOW MANY PEOPLE WILL BE ALLOWED IN THE WHITELIST SALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -263,7 +261,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XI.  </span>HOW MANY BORED 90s GANG NFTS CAN I MINT IN THE WHITELIST SALE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>HOW MANY BORED 90s GANG NFTS CAN I MINT IN THE WHITELIST SALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -284,7 +282,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XII.  </span>HOW MANY Bored 90s Gang NFTS CAN I MINT IN THE PUBLIC SALE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>HOW MANY Bored 90s Gang NFTS CAN I MINT IN THE PUBLIC SALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -305,7 +303,7 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XIII.  </span>WHAT HAPPENS IF I MISS THE WHITELIST AND PUBLIC SALE?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}> </span>WHAT HAPPENS IF I MISS THE WHITELIST AND PUBLIC SALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -327,7 +325,7 @@ and either making an offer for the NFT or clicking to buy it now, depending on t
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XIV.  </span>WHERE CAN I VIEW MY BORED 90s GANG NFT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHERE CAN I VIEW MY BORED 90s GANG NFT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -348,7 +346,7 @@ and either making an offer for the NFT or clicking to buy it now, depending on t
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XV.  </span>WHAT CAN I DO WITH MY BORED 90S GANGSTER NFT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>WHAT CAN I DO WITH MY BORED 90S GANGSTER NFT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -370,7 +368,7 @@ and either making an offer for the NFT or clicking to buy it now, depending on t
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XVI.  </span>ARE THERE SECONDARY SALES ROYALTIES?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>ARE THERE SECONDARY SALES ROYALTIES?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -391,7 +389,7 @@ and either making an offer for the NFT or clicking to buy it now, depending on t
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XVII.  </span>DO I OWN THE NFT AFTER MINTING IT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>DO I OWN THE NFT AFTER MINTING IT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -412,7 +410,7 @@ and either making an offer for the NFT or clicking to buy it now, depending on t
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XVIII.  </span>ARE THE BORED 90s GANG NFTS A GOOD INVESTMENT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>  </span>ARE THE BORED 90s GANG NFTS A GOOD INVESTMENT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
@@ -434,7 +432,7 @@ and either making an offer for the NFT or clicking to buy it now, depending on t
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XIX.  </span>WILL THERE BE FLOOR SWEEPS?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}> </span>WILL THERE BE FLOOR SWEEPS?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
