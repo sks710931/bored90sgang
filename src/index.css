@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Holiday';
+  src: local('Holiday'), url(./assets/HolidayFree.otf) format('opentype');
+}

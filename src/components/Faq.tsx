@@ -48,12 +48,14 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>I.  </span>What is an NFT?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>I.  </span>WHAT IS THE TOTAL SUPPLY OF BORED 90s GANG?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    NFT stands for “Non-fungible token” and is a cool way of saying it’s a truly unique digital item that YOU can buy, own, and trade.
+                                    There are a total of 8896 Bored 90s Gangster NFTs available to mint:
+                                    <p>- 8888 Regular Bored 90s Gangsters</p>
+                                    - 8 ultra-rare OGs, which come with added rewards and incredible rarity. You have approximately a 0.1% chance to mint an OG.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -69,12 +71,12 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>II.  </span>What is Metamask?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>II.  </span>WILL THERE BE A PRESALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    Metamask is a crypto-wallet that can store your Ethereum, and is needed to purchase and mint a Baby Ghost. Having a wallet gives you an Ethereum address (i.e. 0xSPOO….666), this is where your NFT will be stored. Learn more about Metamask and how easy it is to use over here! (https://metamask.io).
+                                    Yes, we will be holding a presale 1 day prior to the public sale launch for our whitelist members.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -90,12 +92,13 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>III.  </span>How to mint with Metamask on a mobile phone?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>III.  </span>WHAT IS THE PRICE FOR ONE BORED 90s GANG NFT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    If you are using a mobile phone to mint our lovely Baby Ghosts, you need to use the Metamask application built-in browser to mint our NFTs. Therefore, please launch the Metamask application, click the 3 lines on the top left menu in the application and select "Browser". It will open a web browser and you will be able to navigate back to babyghosts.com to do the minting.
+                                    For the Whitelist presale the price will be set at 0.1 ETH + Gas
+                                    <p>For the public sale the price will be set at 0.175 ETH + Gas.</p>
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -111,12 +114,12 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>IV.  </span>How to mint with Metamask on a computer?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>IV.  </span>WHAT IS AN NFT?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    If you are using a computer to mint our lovely Baby Ghosts, you just need to connect the Metamask plugin with our website, verify you have enough ETH to do the transaction, then you will be able to click on the Mint button to buy a few Baby Ghosts.
+                                    An NFT (non-fungible token) is a unique digital asset stored on the blockchain. This unique digital asset has verifiable uniqueness, rarity and proof-of-ownership. The Bored 90s Gang NFT tokens are Ethereum ERC-721 tokens.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -132,12 +135,12 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>V.  </span>Buying NFT for the first time?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>V.  </span>WHAT DAY DOES BORED 90s GANG LAUNCH?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    Get the Metamask Chrome or Firefox extension. Load it with ETH through services that allow you to change your money to ETH like Coinbase, Binance or Kraken. Then, click the button "MINT" on the scary banner to connect your wallet and approve the transaction on Metamask. That’s it !
+                                    Bored 90s Gang will have its whitelist presale and public mint in March of 2022. The exact date is subject to change because we are firstly committed to maximizing the quality of the project and building the community first.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -153,12 +156,12 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VI.  </span>Where does my NFT go after I purchase a Baby Ghost?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VI.  </span>HOW CAN I GET ONE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    Your Baby Ghost NFT will appear in whatever address, or connected wallet you used to purchase the Baby Ghost. You can see your freshly minted NFT card directly on your Opensea.io account.
+                                    To mint a Bored 90s Gang NFT, you will need to obtain Ethereum tokens and transfer them into your crypto wallet (preferably metamask due to security and ease of use). Once you have done this, connect your metamask wallet to your internet browser and integrate it into our website and you will be able to mint your Bored 90s Gang NFT!
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -174,12 +177,12 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VII.  </span>That sounds great, how do I get in?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VII.  </span>WHAT IS METAMASK?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    Join our Discord (https://discord.gg/BabyGhosts) server or Twitter (https://twitter.com/BabyGhosts_NFT) account and jump in on the conversation & share your ideas!
+                                    Metamask is a crypto-wallet that can store your Ethereum, and is needed to purchase and mint a Bored 90s Gangster. Having a wallet gives you an Ethereum address (i.e. 0xSPOO….555), this is where your NFT will be stored. Learn more about Metamask and how easy it is to use over here! (https://metamask.io/)
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -195,12 +198,14 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VIII.  </span>What can I do with my Baby Ghosts / How can I trade them?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>VIII.  </span>CAN I MINT USING MY PHONE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    You are free to do anything with them under a non-exclusive license. Baby Ghosts adheres to the ERC-721 standard so you can trade them on platforms like OpenSea.
+                                    If you are using a mobile phone to mint a Bored 90s Gangster, you need to use the Metamask application built-in browser.
+                                    <p>- Please launch the Metamask application, click the 3 lines on the top left menu in the application and select "Browser".</p>
+                                    - It will open a web browser and you will be able to navigate back to WEBSITE LINK to do the minting.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -216,12 +221,12 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>IX.  </span>Are Baby Ghosts a good investment?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>IX.  </span>HOW CAN I GET ONTO THE WHITELIST?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    Well, yeah! At least we believe that Baby Ghosts have a long life of haunting ahead of them, and will keep growing as the project doesn’t end here! Hopefully Baby Ghosts go to the moon, but like anything in life, don’t spend money you can’t afford not to have.
+                                    Please head to our "⚪how-to-whitelist" section in our Discord server to find out how to get onto the whitelist!
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -237,12 +242,204 @@ export const Faq = () => {
                                     id="panel1bh-header"
                                 >
                                     <Typography color="common.white" variant="body1">
-                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>X.  </span>What about Tokenomics?
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>X.  </span>HOW MANY PEOPLE WILL BE ALLOWED IN THE WHITELIST SALE?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{maxWidth: '630px'}}>
                                     <Typography color="#989898" variant="body1">
-                                    We have reserved 100 Baby Ghosts to giveaway. Most of these will be given out after launch and will not occupy the early token ids. We will also use a % of mint sales to occasionally sweep the floor, do giveways, and create merch!
+                                    We have reserved 100 Baby Ghosts to giveaway. Most of these will be given out after launch and will not occupy the early token ids. We will also use a % of mint sales to occasionally sweep the floor, do giveways, and create merch!There will only be 1000 places available to be in our whitelist sale.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel10'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XI.  </span>HOW MANY BORED 90s GANG NFTS CAN I MINT IN THE WHITELIST SALE?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    There is a limit of 3 NFT per wallet if you are in the whitelist pre-sale.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel11'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XII.  </span>HOW MANY Bored 90s Gang NFTS CAN I MINT IN THE PUBLIC SALE?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    There is a limit of 3 NFTs per wallet if you are in the public sale.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel12'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XIII.  </span>WHAT HAPPENS IF I MISS THE WHITELIST AND PUBLIC SALE?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    If you miss the whitelist presale and public sale, you will still be able to purchase a Bored 90s Gang NFT on the secondary market by viewing the collection on Opensea: https://opensea.io/collection/bored90sgang
+and either making an offer for the NFT or clicking to buy it now, depending on the preference set by the current owner of that NFT.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel13'} onChange={handleChange('panel13')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel13'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XIV.  </span>WHERE CAN I VIEW MY BORED 90s GANG NFT?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    Once you have minted your Bored 90s Gang NFT, you will be able to view it when you connect your crypto wallet to OpenSea.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel14'} onChange={handleChange('panel14')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel14'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XV.  </span>WHAT CAN I DO WITH MY BORED 90S GANGSTER NFT?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    You can use your Bored 90s Gang NFT as a profile picture online, and hold until we airdrop the 3D collection. Holding long-term is the way to get the most value out of your NFT, as well as the added utility that will come when we begin our metaverse integration project.
+                                    <p>However, we understand that some in the NFT space aim to flip NFT’s by buying them and selling them for profit. This is entirely your right to do so, however if you are not holding a your Bored 90s Gangster NFT on 3D Airdrop day, you will not receive your 3D NFT.</p>
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel15'} onChange={handleChange('panel15')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel15'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XVI.  </span>ARE THERE SECONDARY SALES ROYALTIES?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    Yes, 10% of the secondary sales fees will be deducted as royalties. A portion of these will be re-invested into marketing to ensure the longevity and momentum of the project throughout the roadmap.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel16'} onChange={handleChange('panel16')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel16'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XVII.  </span>DO I OWN THE NFT AFTER MINTING IT?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    Yes, you will own all the intellectual properties to your specific Bored 90s Gangster. This means you can use the image for commercial purposes as well as personal.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel17'} onChange={handleChange('panel17')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel17'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XVIII.  </span>ARE THE BORED 90s GANG NFTS A GOOD INVESTMENT?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    We believe that Bored 90s Gang NFTs have the potential to be much more than a simple flip for investors, which is why we are advising people to hold their Bored 90s Gangster long-term. Not only will every holder be rewarded with their own FREE 3D NFT upon completion of the roadmap, they'll also gain access to the other rewards systems, exclusivity, features and community benefits we are aiming to develop throughout the course of this project.
+                                    <p>Like any other investment, don't spend your money if you can't afford to lose it. This goes for any NFTs, cryptocurrencies, stocks, and any other investment influenced by market economics.</p>
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                        </div>
+                    </div>
+                    <Divider sx={{ml:'30px', mr:'30px', borderColor:'#989898'}}/>
+                    <div className={classes.faqitem}>
+                        <div className={classes.txt}>
+                            <Accordion sx={{backgroundColor: "transparent"}} expanded={expanded === 'panel18'} onChange={handleChange('panel18')}>
+                                <AccordionSummary
+                                    expandIcon={expanded === 'panel18'?<RemoveIcon sx={{color: "#784dc8"}}/>:<AddIcon sx={{color: "#784dc8"}}/>}
+                                    aria-controls="panel1bh-content"
+                                    id="panel1bh-header"
+                                >
+                                    <Typography color="common.white" variant="body1">
+                                        <span style={{color:'#784dc8', marginRight: '20px', fontWeight:'bold'}}>XIX.  </span>WILL THERE BE FLOOR SWEEPS?
+                                    </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails sx={{maxWidth: '630px'}}>
+                                    <Typography color="#989898" variant="body1">
+                                    Yes. We will regularly use proceeds and royalties to perform floor sweeps, and use the NFTs collected in raffles or in combination with our other giveaways throughout the course of the roadmap and beyond.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -299,15 +496,13 @@ const useStyles = makeStyles((theme) =>
             fontWeight: '700'
         },
         faqs: {
-            fontSize: '84px',
-            lineHeight: '1.095',
+            fontFamily:'Holiday',
+            fontSize: '64px',
             marginBottom: '11px',
+            marginTop: '4px',
             letterSpacing: '2.2px',
-            ['@media (max-width:768px)']: {
-                fontSize: '55px',
-            },
             ['@media (max-width:1100px)']: {
-                fontSize: '65px',
+                fontSize: '45px',
             },
         },
         desc:{

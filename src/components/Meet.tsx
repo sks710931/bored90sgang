@@ -77,13 +77,15 @@ const useStyles = makeStyles((theme) =>
             fontWeight: '700'
         },
         heading: {
-            fontSize: '90px',
+            fontFamily: 'Holiday',
+            marginTop: '10px',
+            fontSize: '74px',
             color:'#fff',
             fontWeight: '400',
             textTransform:'uppercase',
             letterSpacing:'2.2px',
             ['@media (max-width:768px)']: {
-                fontSize: '60px',
+                fontSize: '30px',
             }
         },
         ghosts: {

@@ -87,14 +87,16 @@ const useStyles = makeStyles((theme) =>
             fontWeight: '700'
         },
         goals: {
-            fontSize: '90px',
+            fontFamily:'Holiday',
+            fontSize: '80px',
             marginBottom: '-10px',
             verticalAlign: 'top',
-            marginTop: '0px',
+            marginTop: '30px',
             color: '#fff',
             textTransform: 'uppercase',
             ['@media (max-width:768px)']: {
-                fontSize: '60px',
+                fontSize: '45px',
+                marginTop: '15px',
             }
         },
         headingwrap: {

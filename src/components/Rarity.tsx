@@ -77,7 +77,10 @@ const useStyles = makeStyles((theme) =>
         rarity: {
             display: 'flex',
             flexWrap: 'wrap',
-            paddingLeft: '30px'
+            paddingLeft: '30px',
+            ['@media (max-width:768px)']: {
+                paddingLeft: '0px',
+            }
         },
         txtbox: {
             width: '50%',
@@ -96,12 +99,17 @@ const useStyles = makeStyles((theme) =>
             letterSpacing: '2.4px',
         },
         heading: {
-            fontSize: '90px',
+            fontFamily: 'Holiday',
+            fontSize: '74px',
             marginBottom: '-10px',
             verticalAlign: 'top',
-            marginTop: '0px',
+            marginTop: '20px',
             color: '#fff',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            ['@media (max-width:900px)']: {
+                fontSize: '50px',
+                marginTop: '10px',
+            }
         },
         p: {
             maxWidth: '360px',

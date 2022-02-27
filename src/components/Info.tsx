@@ -136,13 +136,15 @@ const useStyles = makeStyles((theme) =>
       letterSpacing: "2.4px",
     },
     maintxt: {
-      fontSize: "84px",
+        fontFamily: 'Holiday',
+      fontSize: "64px",
       marginBottom: "11px",
       verticalAlign: "top",
-      marginTop: "0px",
+      marginTop: "10px",
       textTransform: "uppercase",
       ["@media (max-width:768px)"]: {
-        fontSize: "60px",
+        marginTop: "20px",
+        fontSize: "30px",
       },
     },
     pdesc: {
