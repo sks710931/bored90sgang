@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) =>
         bannerTextImg:{
             marginTop: '-4%',
             width: 900,
+            zIndex: 10,
             ['@media (max-width:899px)']: {
                 width: 600,
             },
