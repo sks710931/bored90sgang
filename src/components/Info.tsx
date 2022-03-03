@@ -152,6 +152,7 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "27px",
       fontSize: "20px",
       lineHeight: "1.688",
+      color: 'grey'
     },
   })
 );

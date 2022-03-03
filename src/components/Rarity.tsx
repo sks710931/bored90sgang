@@ -1,7 +1,6 @@
 /* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from "@mui/styles";
 
-import rare from "../assets/rare.png";
 import rareghost from "../assets/rareghost.png";
 
 export const Rarity = () => {
@@ -12,43 +11,40 @@ export const Rarity = () => {
         <div className={classes.container}>
           <div className={classes.outer}>
             <div className={classes.inner}>
-              <img src={rare} className={classes.bg} alt="" />
+              
               <div className={classes.rarity}>
                 <div className={classes.txtbox}>
                   <img src={rareghost} className={classes.ghost} alt="" />
                 </div>
                 <div className={classes.txtbox} style={{ alignSelf: "center" }}>
-                  <span className={classes.title}>
-                    An apparition from preschool!
-                  </span>
                   <h1 className={classes.heading}>Rarity</h1>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     In any gang there is a hierarchy, and in the Bored 90s Gang,
                     the top of the hierarchy is where the OGs sit.
                   </p>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     OG Bored 90s Gangsters are recognisable by their double
                     gold-earring combination (the hanging gun earring and the
                     higher gold earring, see sneak peaks for more 👀)
                   </p>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     On mint day, you have a direct chance to become a OG member.
                   </p>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     You will have approximately an 0.1% chance to mint an OG
                     Bored 90s Gangster. If you miss out on minting an OG, you
                     can always purchase one on the secondary market on opensea.
                   </p>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     Their owners will receive additional benefits such as: - 1
                     ETH gift on completion of phase 2 of the roadmap, as well as
                     your 3D NFT when the 3D collection is airdropped to holders.
                   </p>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     OG Bored 90s Gangster holders will receive their own exact
                     NFT in 3D.
                   </p>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "grey" }}>
                     Access to exclusive Bored 90s Gang OG merchandise, reserved
                     for OG members which will be released alongside the standard
                     Bored 90s Gang merchandise during the roadmap.
@@ -100,6 +96,7 @@ const useStyles = makeStyles((theme) =>
       width: "360px",
       height: "auto",
       paddingLeft: "40px",
+      marginTop: 100,
       ["@media (max-width:900px)"]: {
         width: "280px",
         margin: "0 auto",

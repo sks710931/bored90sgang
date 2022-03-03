@@ -6,7 +6,6 @@ import { Landing } from "../components/Landing";
 import { Info } from '../components/Info';
 import { Goals } from '../components/Goals';
 import { Rarity } from '../components/Rarity';
-import { Items } from '../components/Items';
 import { Meet } from '../components/Meet';
 import logo from '../assets/logo.png';
 import discord from '../assets/logo/discord.svg';
@@ -69,7 +68,6 @@ export const Home = () => {
                 <div ref={rareRef}>
                     <Rarity />
                 </div>
-                <Items />
                 <div ref={teamRef}>
                     <Meet />
                 </div>
