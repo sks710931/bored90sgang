@@ -564,8 +564,8 @@ export const Faq = () => {
             <div className={classes.txt}>
               <Accordion
                 sx={{ backgroundColor: "transparent" }}
-                expanded={expanded === "panel10"}
-                onChange={handleChange("panel10")}
+                expanded={expanded === "panel101"}
+                onChange={handleChange("panel101")}
               >
                 <AccordionSummary
                   expandIcon={
