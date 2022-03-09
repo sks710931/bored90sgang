@@ -66,6 +66,7 @@ const useStyles = makeStyles((theme) =>
       position: "relative",
       zIndex: 1,
       maxHeight: "100000px",
+      marginBottom: 70
     },
     container: {
       maxWidth: "1170px",
