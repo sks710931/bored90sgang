@@ -2,9 +2,9 @@
 import { createStyles, makeStyles } from '@mui/styles';
 
 import teambg from "../assets/team.jpg";
-import team1 from '../assets/ghost1.png';
-import team2 from '../assets/ghost2.png';
-import team3 from '../assets/ghost3.png';
+// import team1 from '../assets/ghost1.png';
+// import team2 from '../assets/ghost2.png';
+// import team3 from '../assets/ghost3.png';
 
 export const Meet = () => {
     const classes = useStyles();
