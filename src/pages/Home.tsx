@@ -38,7 +38,7 @@ export const Home = () => {
                     <div className={classes.nav}>
                         <ul className={classes.menulist}>
                             <li className={classes.menuitem} onClick={() => executeScroll(welcomeRef)}>Welcome</li>
-                            <li className={classes.menuitem} onClick={() => executeScroll(goalsRef)}>Goals</li>
+                            <li className={classes.menuitem} onClick={() => executeScroll(goalsRef)}>Roadmap</li>
                             <li className={classes.menuitem} onClick={() => executeScroll(rareRef)}>Rarity</li>
                             <li className={classes.menuitem} onClick={() => executeScroll(teamRef)}>Team</li>
                             <li className={classes.menuitem} onClick={() => executeScroll(faqRef)}>Faq</li>

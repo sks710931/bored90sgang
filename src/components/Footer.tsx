@@ -42,13 +42,13 @@ export const Footer = () => {
             </div>
             <div className={classes.terms}>
                 <ul className={classes.copyright}>
-                    <li className={classes.bottom}>
-                        Copyright © Baby Ghosts 2021
+                    <li className={`${classes.bottom} ${classes.left}`}>
+                        Copyright © Bored 90s Gangs
                     </li>
-                    <li className={classes.bottom} style={{color:'#fff'}}>
+                    <li className={`${classes.bottom} ${classes.center}`} style={{color:'#fff',}}>
                         Terms of Use
                     </li>
-                    <li className={classes.bottom}>
+                    <li  className={`${classes.bottom} ${classes.right}`}>
                         All Rights Reserved
                     </li>
                 </ul>
@@ -59,6 +59,24 @@ export const Footer = () => {
 
 const useStyles = makeStyles((theme) =>
     createStyles({
+        left:{
+            textAlign: "left!important" as any,
+            ['@media (max-width:768px)']: {
+                textAlign: "center!important" as any,
+            },
+        },
+        center:{
+            textAlign: "center!important" as any,
+            ['@media (max-width:768px)']: {
+                textAlign: "center!important" as any,
+            },
+        },
+        right:{
+            textAlign: "right!important" as any,
+            ['@media (max-width:768px)']: {
+                textAlign: "center!important" as any,
+            },
+        },
         wrapper: {
             position: 'relative',
             textAlign:'center',
@@ -150,9 +168,11 @@ const useStyles = makeStyles((theme) =>
             padding: '20px 0px',
             margin: '0 auto',
             display: 'flex',
+            flexDirection: 'row',
             flexWrap: 'wrap',
             ['@media (max-width:768px)']: {
-                width: '150px'
+                width: '150px',
+                flexDirection: 'column',
             },
         },
         copyright: {
@@ -164,6 +184,17 @@ const useStyles = makeStyles((theme) =>
             lineHeight: '1.444',
             listStyle: 'none',
             paddingLeft:'0px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: "100%",
+            flexDirection: 'row',
+            ['@media (max-width:768px)']: {
+                flexDirection: 'column',
+            },
+            '& li':{
+                cursor: "pointer",
+            }
         },
         bottom: {
             textAlign:'left',width:'33.33%',
