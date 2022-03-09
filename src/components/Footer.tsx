@@ -16,16 +16,7 @@ export const Footer = () => {
                 <div className={classes.container}>
                     <img src={logo} className={classes.logo} alt="logo"/>
                     <ul className={classes.footerbtns}>
-                        <li>
-                            <div className={classes.btns}>
-                                10,000 Members <img src={discord} style={{width:'18px', height:'auto'}} alt=""/>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={classes.btns} style={{borderColor:'#55c1fe'}}>
-                                11K Followers <img src={twitter} style={{width:'18px', height:'auto'}} alt=""/>
-                            </div>
-                        </li>
+                        
                     </ul>
                     <ul className={classes.sociallist}>
                             <li className={classes.socialitem}>
