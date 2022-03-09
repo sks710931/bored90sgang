@@ -44,7 +44,7 @@ export const Rarity = () => {
                     OG Bored 90s Gangster holders will receive their own exact
                     NFT in 3D.
                   </p>
-                  <p style={{ color: "grey" }}>
+                  <p className={classes.last}>
                     Access to exclusive Bored 90s Gang OG merchandise, reserved
                     for OG members which will be released alongside the standard
                     Bored 90s Gang merchandise during the roadmap.
@@ -65,7 +65,6 @@ const useStyles = makeStyles((theme) =>
       padding: "94px 0",
       position: "relative",
       zIndex: 1,
-      minHeight: "600px",
       maxHeight: "100000px",
     },
     container: {
@@ -145,5 +144,9 @@ const useStyles = makeStyles((theme) =>
         margin: "0 auto",
       },
     },
+    last:{
+      color: "gray",
+      marginBottom: 70
+    }
   })
 );

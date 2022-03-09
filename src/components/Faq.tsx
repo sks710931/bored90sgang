@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 
-import faqbg from '../assets/faqbg.jpeg';
+import faqbg from '../assets/faq.jpg';
 import { Divider } from '@mui/material';
 
 export const Faq = () => {
@@ -25,6 +25,7 @@ export const Faq = () => {
             <div className={classes.container}>
                 <div className={classes.faqwrap}>
                     <img src={faqbg} alt="" className={classes.bg}/>
+                    
                     <div className={classes.heading}>
                         {
                             mdMatches ? (
@@ -519,6 +520,7 @@ const useStyles = makeStyles((theme) =>
             color: '#ffffff',
             fontSize: '30px',
             padding: '15px 15px 15px 15px',
-        }
+        },
+        
     })
 )

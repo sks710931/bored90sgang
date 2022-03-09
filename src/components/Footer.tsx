@@ -100,6 +100,7 @@ const useStyles = makeStyles((theme) =>
         footerbtns: {
             flex:1,
             display: 'flex',
+            flexDirection: 'row',
             flexWrap: 'wrap',
             justifyContent: 'center',
             listStyle: 'none',
