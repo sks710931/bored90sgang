@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-computed-key */
 import { createStyles, makeStyles } from "@mui/styles";
 
-import rareghost from "../assets/rareghost.png";
+import rareghost from "../assets/rareghost.jpg";
 
 export const Rarity = () => {
   const classes = useStyles();
@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) =>
       height: "auto",
     },
     ghost: {
-      width: "360px",
+      width: "450px",
       height: "auto",
       paddingLeft: "40px",
       marginTop: 100,
