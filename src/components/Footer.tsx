@@ -36,7 +36,7 @@ export const Footer = () => {
             <div className={classes.terms}>
                 <ul className={classes.copyright}>
                     <li className={`${classes.bottom} ${classes.left}`}>
-                        Copyright © Bored 90s Gangs
+                        Copyright © Bored 90s Gang
                     </li>
                     <li className={`${classes.bottom} ${classes.center}`} style={{color:'#fff',}}>
                         Terms of Use
