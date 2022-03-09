@@ -111,6 +111,7 @@ const useStyles = makeStyles((theme) =>
         logo: {
             width: '67px',
             height: 'auto',
+            cursor: "pointer"
         },
         nav: {
             display: 'flex',
@@ -130,7 +131,6 @@ const useStyles = makeStyles((theme) =>
             fontFamily: 'inter',
             paddingLeft: '38px',
             width: 'calc(80% - 38px)',
-            textTransform:'uppercase',
             ['@media (max-width:768px)']: {
                 display: 'none'
             }
@@ -139,7 +139,10 @@ const useStyles = makeStyles((theme) =>
             marginRight: '30px',
             listStyle: 'none',
             cursor: 'pointer',
-            letterSpacing: '1.2px'
+            letterSpacing: '1.2px',
+            fontFamily: "Holiday",
+            fontSize: 20,
+            color: "white"
         },
         sociallist: {
             display: 'flex',

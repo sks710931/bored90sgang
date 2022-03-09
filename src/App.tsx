@@ -1,9 +1,16 @@
-import React from 'react';
-import { Home } from './pages/Home';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Mint } from "./pages/Mint";
 
 function App() {
   return (
-    <Home />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/mint" element={<Mint />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

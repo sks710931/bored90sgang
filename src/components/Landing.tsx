@@ -6,8 +6,10 @@ import ghost2 from '../assets/ghost2.png';
 import ghost3 from '../assets/ghost3.png';
 import bgvideo from '../assets/bg.mp4';
 import banner from '../assets/banner.png';
+import { useNavigate } from 'react-router';
 export const Landing = () => {
     const classes = useStyles();
+    const navigate = useNavigate();
     return (
         <section className={classes.banner}>
             <div className={classes.container}>
@@ -30,13 +32,13 @@ export const Landing = () => {
                     </div>
                 </div>
                 <div className={classes.form}>
-                    <div className={classes.button}>
+                    <div onClick={() => navigate("/mint")} className={classes.button}>
                         <span>
                             Mint Now
                         </span>
                     </div>
                     <span className={classes.formtxt}>
-                        <span style={{color:"rgb(255, 98, 101)"}}>10,000</span> / 10,000 Minted
+                        <span style={{color:"rgb(255, 98, 101)"}}>0</span> / 8896 Minted
                     </span>
                 </div>
             </div>

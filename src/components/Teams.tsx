@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import p1 from "../assets/team1.png";
-import p2 from "../assets/ghost3.png";
 import telegram from "../assets/logo/telegram.svg";
+import discord from "../assets/logo/discord.svg";
 import twitter from "../assets/logo/twitter.svg";
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any }) {
@@ -64,6 +64,7 @@ export const Teams = () => {
     desc1: {} | null | undefined,
     desc2: {} | null | undefined,
     twitterUrl: string | undefined,
+    telegramURL: string | undefined,
     discordURL: string | undefined
   ) => {
     return (
@@ -82,7 +83,16 @@ export const Teams = () => {
                   window.open(twitterUrl, "_blank");
                 }}
               >
-                <img src={twitter} className={classes.twitter} alt="" />
+                <img src={twitter} className={classes.discord} alt="" />
+              </li>
+            )}
+            {telegramURL && (
+              <li
+                onClick={() => {
+                  window.open(telegramURL, "_blank");
+                }}
+              >
+                <img src={telegram} alt="" className={classes.discord} />
               </li>
             )}
             {discordURL && (
@@ -91,7 +101,7 @@ export const Teams = () => {
                   window.open(discordURL, "_blank");
                 }}
               >
-                <img src={telegram} alt="" className={classes.discord} />
+                <img src={discord} alt="" className={classes.discord} />
               </li>
             )}
           </ul>
@@ -112,18 +122,10 @@ export const Teams = () => {
               "",
               "",
               "https://twitter.com/meni_hara",
-              undefined
+              "https://t.me/menios93",
+              "https://discordapp.com/users/770593157422907412/"
             )}
-            {item(
-              p2,
-              "Blockchain Expert",
-              "#a3e869",
-              "Shivam",
-              "",
-              "",
-              "https://twitter.com/sks71093",
-              "https://t.me/sks71093"
-            )}
+            
           </Slider>
         ) : (
           <>
@@ -136,18 +138,8 @@ export const Teams = () => {
                 "",
                 "",
                 "https://twitter.com/meni_hara",
-                undefined
+                "https://t.me/menios93","https://discordapp.com/users/770593157422907412/"
               )}
-              {item(
-              p2,
-              "Blockchain Expert",
-              "blue",
-              "Shivam",
-              "",
-              "",
-              "https://twitter.com/sks71093",
-              "https://t.me/Sks71093"
-            )}
             </div>
           </>
         )}
@@ -244,7 +236,7 @@ const useStyles = makeStyles((theme) =>
           marginRight: 10,
       }
     },
-    discord: { cursor: "pointer", paddingRight: "15px" },
+    discord: { cursor: "pointer", paddingRight: "5px" },
     twitter: { cursor: "pointer" },
   })
 );

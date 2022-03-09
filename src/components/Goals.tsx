@@ -9,30 +9,16 @@ export const Goals = () => {
       <div className={classes.wrapper}>
         <div className={classes.container}>
           <div className={classes.heading}>
-            <span className={classes.title}>Mint Them All!</span>
             <h1 className={classes.goals}>Roadmap</h1>
             <div className={classes.headingwrap}>Phase 1</div>
             <Typography variant="h4">CREATION & LAUNCH</Typography>
           </div>
           <ul className={classes.goallist}>
             <li className={classes.goalitem}>
-              <span className={classes.perc}>JANUARY 2022</span>
-
               <p className={classes.goalItems}>Launch of Social Media</p>
-
               <p className={classes.goalItems}> Art Reveal</p>
-            </li>
-            <li className={classes.goalitem}>
-              <span className={classes.perc}>February 2022</span>
-
               <p className={classes.goalItems}> Launch of Discord</p>
-            </li>
-            <li className={classes.goalitem}>
-              <span className={classes.perc}>March 2022</span>
               <p className={classes.goalItems}> Launch of Website</p>
-            </li>
-            <li className={classes.goalitem}>
-              <span className={classes.perc}>Late March/April 2022</span>
               <p className={classes.goalItems}>
                 Presale for Whitelist Members - 0.1ETH per nft
               </p>
@@ -47,103 +33,96 @@ export const Goals = () => {
           </div>
           <ul className={classes.goallist}>
             <li className={classes.goalitem}>
-              
-                  <p className={classes.goalItems}>
-                    {" "}
-                    (Each Step of Phase 2 of the Roadmap will Include a $25,000
-                    USD re-investment into the marketing for the project as well
-                    as acquiring prizes for future giveaways and contests)
-                  </p>
-                
+              <p className={classes.goalItems}>
+                {" "}
+                (Each Step of Phase 2 of the Roadmap will Include a $25,000 USD
+                re-investment into the marketing for the project as well as
+                acquiring prizes for future giveaways and contests)
+              </p>
             </li>
             <li className={classes.goalitem}>
               <span className={classes.perc}>25%</span>
-              
-                  <p className={classes.goalItems}>
-                    {" "}
-                    First Charity Donation: 50,000 USD - Stand Up for Kids
-                    (providing shelter and food for homeless and privileged
-                    inner city kids and youths in the US)
-                  </p>
-               
+
+              <p className={classes.goalItems}>
+                {" "}
+                First Charity Donation: 50,000 USD - Stand Up for Kids
+                (providing shelter and food for homeless and privileged inner
+                city kids and youths in the US)
+              </p>
             </li>
             <li className={classes.goalitem}>
               <span className={classes.perc}>50%</span>
-              
-                  <p className={classes.goalItems}>
-                    {" "}
-                    First ETH Giveaway - Prizes up to 1 ETH
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    First Movie Memorabilia Giveaway & Vintage Clothing Giveaway
-                  </p>
-                
+
+              <p className={classes.goalItems}>
+                {" "}
+                First ETH Giveaway - Prizes up to 1 ETH
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                First Movie Memorabilia Giveaway & Vintage Clothing Giveaway
+              </p>
             </li>
             <li className={classes.goalitem}>
               <span className={classes.perc}>75%</span>
-              
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Second ETH Giveaway - Prizes up to 1 ETH
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Second Movie Memorabilia Giveaway & Vintage Clothing
-                    Giveaway
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Bored 90s Gang Merch Launch - Free Pieces Start to be
-                    Raffled off to Holders and continues throughout life-cycle
-                    of the project
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    OGs will receive their OG-exclusive merch
-                  </p>
-                
+
+              <p className={classes.goalItems}>
+                {" "}
+                Second ETH Giveaway - Prizes up to 1 ETH
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                Second Movie Memorabilia Giveaway & Vintage Clothing Giveaway
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                Bored 90s Gang Merch Launch - Free Pieces Start to be Raffled
+                off to Holders and continues throughout life-cycle of the
+                project
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                OGs will receive their OG-exclusive merch
+              </p>
             </li>
             <li className={classes.goalitem}>
               <span className={classes.perc}>100%</span>
-              
-                  <p className={classes.goalItems}>
-                    {" "}
-                    3D NFT Collection (FREE airdrop for holders)
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    HOLDERS Of the 8 Rare OGs will receive their 1 ETH gift
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Creation of PRIVATE holders discord channels within Bored
-                    90s Gang Server to streamline giveaways and distribution of
-                    exclusive rewards whilst the project begins it's transition
-                    into metaverse utility
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Third ETH Giveaway - Prizes up to 1 ETH
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Third Movie Memorabilia Giveaway & Vintage Clothing Giveaway
-                  </p>
-                
-                  <p className={classes.goalItems}>
-                    {" "}
-                    Second Charity Donation: 50,000 USD: Stand Up for Kids
-                  </p>
-                
+
+              <p className={classes.goalItems}>
+                {" "}
+                3D NFT Collection (FREE airdrop for holders)
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                HOLDERS Of the 8 Rare OGs will receive their 1 ETH gift
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                Creation of PRIVATE holders discord channels within Bored 90s
+                Gang Server to streamline giveaways and distribution of
+                exclusive rewards whilst the project begins it's transition into
+                metaverse utility
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                Third ETH Giveaway - Prizes up to 1 ETH
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                Third Movie Memorabilia Giveaway & Vintage Clothing Giveaway
+              </p>
+
+              <p className={classes.goalItems}>
+                {" "}
+                Second Charity Donation: 50,000 USD: Stand Up for Kids
+              </p>
             </li>
           </ul>
           <div className={classes.heading}>

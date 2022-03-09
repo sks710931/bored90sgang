@@ -6,15 +6,17 @@ import overlay from '../assets/overlay.png';
 import discord from '../assets/logo/discord.svg';
 import twitter from '../assets/logo/twitter.svg';
 import opensea from '../assets/logo/opensea.svg';
+import { useNavigate } from 'react-router';
 
 export const Footer = () => {
     const classes = useStyles();
+    const navigate = useNavigate();
     return (
         <div className={classes.wrapper}>
             <div className={classes.block}>
                 <div className={classes.bg}></div>
                 <div className={classes.container}>
-                    <img src={logo} className={classes.logo} alt="logo"/>
+                    <img onClick={() => navigate("/")} src={logo} className={classes.logo} alt="logo"/>
                     <ul className={classes.footerbtns}>
                         
                     </ul>
@@ -72,6 +74,7 @@ const useStyles = makeStyles((theme) =>
             position: 'relative',
             textAlign:'center',
             zIndex: 1,
+            backgroundColor: 'black'
         },
         block: {
             padding: '19px 0',
@@ -105,6 +108,7 @@ const useStyles = makeStyles((theme) =>
         logo: {
             width: '59px',
             height: 'auto',
+            cursor: "pointer"
         },
         footerbtns: {
             flex:1,
