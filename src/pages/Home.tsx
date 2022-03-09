@@ -44,13 +44,13 @@ export const Home = () => {
                             <li className={classes.menuitem} onClick={() => executeScroll(faqRef)}>Faq</li>
                         </ul>
                         <ul className={classes.sociallist}>
-                            <li className={classes.socialitem}>
+                            <li onClick={() =>  window.open("https://opensea.io/collection/bored90sgang", "_blank")} className={classes.socialitem}>
                                 <img src={opensea} className={classes.socialicon} alt="opensea"/>
                             </li>
-                            <li className={classes.socialitem}>
+                            <li onClick={() =>  window.open("https://twitter.com/Bored90sGang", "_blank")} className={classes.socialitem}>
                                 <img src={twitter} className={classes.socialicon} alt="twitter"/>
                             </li>
-                            <li className={classes.socialitem}>
+                            <li onClick={() =>  window.open("https://discord.com/channels/930892680987295764/930904020401422366", "_blank")} className={classes.socialitem}>
                                 <img src={discord} className={classes.socialicon} alt="discord"/>
                             </li>
                         </ul>
@@ -153,6 +153,9 @@ const useStyles = makeStyles((theme) =>
         socialitem: {
             marginRight: '10px',
             listStyle: 'none',
+            '&:hover':{
+                cursor: "pointer"
+            }
         },
         socialicon: {
             border: 'none',

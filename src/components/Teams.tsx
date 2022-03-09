@@ -218,8 +218,9 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "9px",
       color: "#fff",
       fontWeight: "400",
-      textTransform: "uppercase",
+      textTransform: "capitalize",
       lineHeight: "1.088",
+      fontFamily: "Holiday"
     },
     desc: {
       marginBottom: "14px",

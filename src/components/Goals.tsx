@@ -127,11 +127,12 @@ export const Goals = () => {
           </ul>
           <div className={classes.heading}>
             <div className={classes.headingwrap}>Phase 3</div>
-            <Typography variant="h4">
-              BEGINNING OF METAVERSE INTEGRATION
-            </Typography>
+            
           </div>
           <ul className={classes.goallist}>
+          <Typography variant="h4">
+              BEGINNING OF METAVERSE INTEGRATION
+            </Typography>
             <li className={classes.goalitem}>
               <p className={classes.goalItems}>
                 Beginning of metaverse project integration and further utilities
@@ -145,10 +146,11 @@ export const Goals = () => {
                 volume post-completion of phase 2
               </p>
             </li>
+            <Typography variant="h4">
+            ENTREPRENEURIAL SUPPORT ROADMAP 
+            </Typography>
             <li className={classes.goalitem}>
-              <span className={classes.perc}>
-                ENTREPRENEURIAL SUPPORT ROADMAP
-              </span>
+            
               <p className={classes.goalItems}>
                 We also want to support our holders in their endeavours outside
                 of the Bored 90s Gang NFT project. This will be expanded upon
