@@ -116,6 +116,7 @@ const useStyles = makeStyles((theme) =>
       zIndex: 11,
       paddingTop: "52px",
       marginBottom: "98px",
+      backgroundColor: "black"
     },
     container: {
       padding: "0 20px",
