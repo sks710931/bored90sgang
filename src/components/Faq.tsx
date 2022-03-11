@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 
-import faqbg from "../assets/faq.jpg";
+import faqbg from "../assets/faq1.jpg";
 import { Divider } from "@mui/material";
 
 export const Faq = () => {
@@ -395,7 +395,7 @@ export const Faq = () => {
                     Having a wallet gives you an Ethereum address (i.e.
                     0xSPOO….555), this is where your NFT will be stored. Learn
                     more about Metamask and how easy it is to use over here!
-                    (https://metamask.io/)
+                    (<a href="https://metamask.io/">https://metamask.io/</a>)
                   </Typography>
                 </AccordionDetails>
               </Accordion>
