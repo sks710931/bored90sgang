@@ -281,16 +281,16 @@ export const Faq = () => {
                   <Typography color="#989898" variant="body1">
                     Bored 90s Gang currently has set the following dates for the
                     sale of the NFT collection:
-                    <p>- Whitelist presale on April 7th.</p>
-                    <p>- Public mint on April 8th.</p>
+                    <p>- Whitelist presale on April 23rd.</p>
+                    <p>- Public mint on April 24th.</p>
+                    <p>- NFT Reveal on May 1st.</p>
                     <p>
                       Both sales will start at 7:00am EST on each respective
                       day.
                     </p>
                     <p>
-                      Please note may be subject to change. Please see the
-                      latest in our discord server in the “announcements”
-                      channel.
+                      This may be subject to change. Please see the latest in
+                      our discord server in the “announcements” channel.
                     </p>
                   </Typography>
                 </AccordionDetails>
@@ -394,8 +394,8 @@ export const Faq = () => {
                     and is needed to purchase and mint a Bored 90s Gangster.
                     Having a wallet gives you an Ethereum address (i.e.
                     0xSPOO….555), this is where your NFT will be stored. Learn
-                    more about Metamask and how easy it is to use over here!
-                    (<a href="https://metamask.io/">https://metamask.io/</a>)
+                    more about Metamask and how easy it is to use over here! (
+                    <a href="https://metamask.io/">https://metamask.io/</a>)
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -498,8 +498,8 @@ export const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography color="#989898" variant="body1">
-                    Please head to our "how-to-whitelist" section in our
-                    Discord server to find out how to get onto the whitelist!
+                    Please head to our "how-to-whitelist" section in our Discord
+                    server to find out how to get onto the whitelist!
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -546,7 +546,8 @@ export const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography color="#989898" variant="body1">
-                  There will only be 1000 places available in our whitelist sale.
+                    There will only be 1000 places available in our whitelist
+                    sale.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -693,9 +694,12 @@ export const Faq = () => {
                     If you miss the whitelist presale and public sale, you will
                     still be able to purchase a Bored 90s Gang NFT on the
                     secondary market by viewing the collection on Opensea:
-                    <a href="https://opensea.io/collection/bored90sgang">https://opensea.io/collection/bored90sgang</a> and either making
-                    an offer for the NFT or clicking to buy it now, depending on
-                    the preference set by the current owner of that NFT.
+                    <a href="https://opensea.io/collection/bored90sgang">
+                      https://opensea.io/collection/bored90sgang
+                    </a>{" "}
+                    and either making an offer for the NFT or clicking to buy it
+                    now, depending on the preference set by the current owner of
+                    that NFT.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -1058,7 +1062,12 @@ export const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography color="#989898" variant="body1">
-                  There will be an owner snapshot taken approximately 30 days after the public mint date. The current date we have for the snapshot is May 8th. This will determine which holders will be airdropped their 3D NFT but this is subject to change. Any changes to this date will be announced to holders in advance.
+                    There will be an owner snapshot taken approximately 30 days
+                    after the public mint date. The current date we have for the
+                    snapshot is May 8th. This will determine which holders will
+                    be airdropped their 3D NFT but this is subject to change.
+                    Any changes to this date will be announced to holders in
+                    advance.
                   </Typography>
                 </AccordionDetails>
               </Accordion>

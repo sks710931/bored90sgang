@@ -1,16 +1,97 @@
 /* eslint-disable no-useless-computed-key */
 import { Button, IconButton } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Counter } from "./counter";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { useWeb3React } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
+import { toast } from "react-toastify";
+import { Contract } from "@ethersproject/contracts";
+import { address } from "../../connectors/address";
+import abi from "../../abi/NFT.json";
+import { formatUnits, parseUnits } from "@ethersproject/units";
 
-export const Minter = () => {
+interface Props {
+  isWhiteListed: boolean;
+}
+export const Minter = ({isWhiteListed}: Props) => {
   const classes = useStyles();
+  const {account, library} = useWeb3React<Web3Provider>();
   const [mints, setMints] = useState(1);
+  const [presalePrice, setPresalePrice] = useState(0);
+  const [salePrice, setSalePrice] = useState(0);
+  const [presaleOpen, setPresaleOpen] = useState(false);
+
+  const getSalePriceValue = () => {
+    const price = mints * salePrice;
+    return price.toString();
+  };
+  const getPreSalePriceValue = () => {
+    const price = mints * presalePrice;
+    return price.toString();
+  };
+
+  const handleMint = async () => {
+    if (account && library) {
+      try {
+        const signer = await library.getSigner();
+        if (isWhiteListed && presaleOpen) {
+          const contract = new Contract(address, abi, signer);
+          let overRides = {
+            value: parseUnits(getPreSalePriceValue(), "ether"),
+          };
+          const txResult = await contract.presaleMint(mints, overRides);
+          await txResult.wait();
+          toast.success(`${mints} Bored 90s Gang NFT's minted successfully!`);
+        } else {
+          const contract = new Contract(address, abi, signer);
+          let overRides = {
+            value: parseUnits(getSalePriceValue(), "ether"),
+          };
+          const txResult = await contract.mint(mints, overRides);
+          await txResult.wait();
+          toast.success(`${mints} Bored 90s Gang NFT's minted successfully!`);
+        }
+      } catch (err: any) {
+        if (err.error) {
+          if (err.code === "INSUFFICIENT_FUNDS") {
+            toast.error("Insufficient Funds");
+          } else {
+            toast.error(err.error.message);
+            console.log(err.code);
+          }
+        } else {
+          if (err.code === 4001) {
+            toast.error("User denied transaction signature.");
+          } else toast.error("Transaction Error");
+        }
+      }
+    }
+  }
+  useEffect(() => {
+    const process = async () => {
+      if(account && library){
+        try{
+          const signer = await library.getSigner();
+          const NFT = new Contract(address, abi, signer);
+          const po = await NFT.isPresaleOpen();
+          setPresaleOpen(po);
+          const sp = await NFT.salePrice(1);
+          const psp = await NFT.presalePrice(1);
+          setSalePrice(Number(formatUnits(sp, "ether")));
+          setPresalePrice(Number(formatUnits(psp, "ether")));
+        }
+        catch{
+          toast.error("Error occured while retriving the mint price.")
+        }
+      }
+    }
+    process();
+  }, [account, library]);
   const addMint = () => {
-    if (mints < 5) {
+    if (mints < 3) {
       setMints(mints + 1);
     }
   };
@@ -41,7 +122,7 @@ export const Minter = () => {
           </div>
         </div>
         <div className={classes.item2}>
-          <Button variant="outlined" fullWidth className={classes.btn}>
+          <Button onClick={handleMint} variant="outlined" fullWidth className={classes.btn}>
             {" "}
             Mint
           </Button>

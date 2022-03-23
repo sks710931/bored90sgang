@@ -7,7 +7,31 @@ import ghost3 from '../assets/ghost3.png';
 import bgvideo from '../assets/bg.mp4';
 import banner from '../assets/banner.png';
 import { useNavigate } from 'react-router';
+import { JsonRpcProvider } from '@ethersproject/providers';
+import { address, RPC } from '../connectors/address';
+import abi from "../abi/NFT.json";
+import { useEffect, useState } from 'react';
+import { Contract } from '@ethersproject/contracts';
+import { formatUnits } from '@ethersproject/units';
+
+
 export const Landing = () => {
+    const [mints, setMints] = useState(0);
+    const rpcProvider = new JsonRpcProvider(RPC);
+
+    useEffect(()=>{
+        const getCount = async () => {
+            const NFT = new Contract(address, abi, rpcProvider);
+            NFT.on("CreateBored90sGang", async ()=>{
+                const num = await NFT.totalSupply();
+                setMints(Number(formatUnits(num, 0)));
+            }); 
+            const num1 = await NFT.totalSupply();
+            setMints(Number(formatUnits(num1, 0)));
+        };
+        getCount();
+    },[]);
+
     const classes = useStyles();
     const navigate = useNavigate();
     return (
@@ -38,7 +62,7 @@ export const Landing = () => {
                         </span>
                     </div>
                     <span className={classes.formtxt}>
-                        <span style={{color:"rgb(255, 98, 101)"}}>0</span> / 8896 Minted
+                        <span style={{color:"rgb(255, 98, 101)"}}>{mints}</span> / 8896 Minted
                     </span>
                 </div>
             </div>
