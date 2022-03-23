@@ -1,4 +1,5 @@
 /* eslint-disable no-useless-computed-key */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { createStyles, makeStyles } from '@mui/styles';
 
 import ghost1 from '../assets/ghost1.png';

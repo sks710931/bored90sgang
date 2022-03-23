@@ -1,4 +1,5 @@
 /* eslint-disable no-useless-computed-key */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Contract } from "@ethersproject/contracts";
 import { JsonRpcProvider } from "@ethersproject/providers";
 import { formatUnits } from "@ethersproject/units";
