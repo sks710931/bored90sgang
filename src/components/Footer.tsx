@@ -38,8 +38,8 @@ export const Footer = () => {
                     <li className={`${classes.bottom} ${classes.left}`}>
                         Copyright © Bored 90s Gang
                     </li>
-                    <li className={`${classes.bottom} ${classes.center}`} style={{color:'#fff',}}>
-                        Terms of Use
+                    <li onClick={() => window.open("https://etherscan.io/address/0xb029c94bcfa7c2093e68793478709d9fd8cab8c8", "_blank")} className={`${classes.bottom} ${classes.center}`} style={{color:'#fff',}}>
+                        View Contract on Etherscan
                     </li>
                     <li  className={`${classes.bottom} ${classes.right}`}>
                         All Rights Reserved

@@ -1,2 +1,2 @@
-export const address ="0xfb83356eaA5caFBbe0352f76500d2ad2395d59F2";
-export const RPC = "https://goerli.infura.io/v3/078470acfa0240e3b670d4c42b890714"
+export const address ="0xb029C94BCFA7C2093E68793478709D9fD8CAb8c8";
+export const RPC = "https://mainnet.infura.io/v3/97d604b5b1514ad895750e81b13e5c43"
