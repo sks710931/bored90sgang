@@ -11,7 +11,6 @@ export const Rarity = () => {
         <div className={classes.container}>
           <div className={classes.outer}>
             <div className={classes.inner}>
-              
               <div className={classes.rarity}>
                 <div className={classes.txtbox}>
                   <img src={rareghost} className={classes.ghost} alt="" />
@@ -25,10 +24,11 @@ export const Rarity = () => {
                   <p style={{ color: "grey" }}>
                     OG Bored 90s Gangsters are recognisable by their double
                     gold-earring combination (the hanging gun earring and the
-                    higher gold earring, see sneak peaks for more 👀)
+                    higher gold earring, see sneak peaks for more 👀).
                   </p>
                   <p style={{ color: "grey" }}>
-                    On mint day, you have a direct chance to become a OG member.
+                    On mint day, you have a direct chance to become an OG
+                    member.
                   </p>
                   <p style={{ color: "grey" }}>
                     You will have approximately an 0.1% chance to mint an OG
@@ -36,18 +36,23 @@ export const Rarity = () => {
                     can always purchase one on the secondary market on opensea.
                   </p>
                   <p style={{ color: "grey" }}>
-                    Their owners will receive additional benefits such as: - 1
-                    ETH gift on completion of phase 2 of the roadmap, as well as
-                    your 3D NFT when the 3D collection is airdropped to holders.
-                  </p>
-                  <p style={{ color: "grey" }}>
-                    OG Bored 90s Gangster holders will receive their own exact
-                    NFT in 3D.
-                  </p>
-                  <p className={classes.last}>
-                    Access to exclusive Bored 90s Gang OG merchandise, reserved
-                    for OG members which will be released alongside the standard
-                    Bored 90s Gang merchandise during the roadmap.
+                    OG Holders will receive additional benefits such as:
+                    <ul>
+                      <li>
+                        1 ETH gift on completion of phase 2 of the roadmap.
+                      </li>
+                      <li>
+                        OG Bored 90s Gangster holders will receive their own
+                        exact NFT in 3D when the 3D collection is airdropped to
+                        holders.
+                      </li>
+                      <li>
+                        Access to exclusive Bored 90s Gang OG merchandise,
+                        reserved for OG members (OG merchandise will be released
+                        alongside the standard Bored 90s Gang merchandise during
+                        the roadmap).
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -66,7 +71,7 @@ const useStyles = makeStyles((theme) =>
       position: "relative",
       zIndex: 1,
       maxHeight: "100000px",
-      marginBottom: 70
+      marginBottom: 130,
     },
     container: {
       maxWidth: "1170px",
@@ -145,9 +150,9 @@ const useStyles = makeStyles((theme) =>
         margin: "0 auto",
       },
     },
-    last:{
+    last: {
       color: "gray",
-      marginBottom: 70
-    }
+      marginBottom: 70,
+    },
   })
 );

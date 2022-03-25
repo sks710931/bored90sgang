@@ -183,6 +183,12 @@ export const Faq = () => {
                       For the public sale the price will be set at 0.175 ETH +
                       Gas.
                     </p>
+                    <p>
+                      These prices may be subject to change pending any price
+                      volatility of Ethereum. Any changes will be announced on
+                      our discord server well before the mint, so that potential
+                      investors are notified.
+                    </p>
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -589,14 +595,14 @@ export const Faq = () => {
                     >
                       {" "}
                     </span>
-                    HOW MANY BORED 90s GANG NFTS CAN I MINT IN THE WHITELIST
-                    SALE?
+                    HOW MANY BORED 90s GANG NFTS CAN I MINT IN WHITELIST
+                    PRESALE?
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography color="#989898" variant="body1">
                     There is a limit of 3 NFT per wallet if you are in the
-                    whitelist pre-sale.
+                    whitelist presale.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -907,6 +913,13 @@ export const Faq = () => {
                     specific Bored 90s Gangster. This means you can use the
                     image for commercial purposes as well as personal.
                   </Typography>
+                  <Typography color="#989898" variant="body1">
+                    The Bored 90s Gang Dev Team will retain the rights to the
+                    Bored 90s Gang Branding, Logo, and Imagery of Unique Bored
+                    90s Gang Characters and images generated for the purpose of
+                    merchandising, branding and marketing, that will not clash
+                    with any infester-held NFT images.
+                  </Typography>
                 </AccordionDetails>
               </Accordion>
             </div>
@@ -955,16 +968,27 @@ export const Faq = () => {
                     We believe that Bored 90s Gang NFTs have the potential to be
                     much more than a simple flip for investors, which is why we
                     are advising people to hold their Bored 90s Gangster
-                    long-term. Not only will every holder be rewarded with their
-                    own FREE 3D NFT upon completion of the roadmap, they'll also
-                    gain access to the other rewards systems, exclusivity,
-                    features and community benefits we are aiming to develop
-                    throughout the course of this project.
+                    long-term.
+                    <p>
+                      Not only will every holder be rewarded with their own FREE
+                      3D NFT upon completion of the roadmap, they'll also gain
+                      access to the other rewards systems, exclusivity, features
+                      and community benefits we are aiming to develop throughout
+                      the course of this project. Please see the roadmap section
+                      for further details, as well as our discord server, where
+                      these benefits are explained further.
+                    </p>
                     <p>
                       Like any other investment, don't spend your money if you
                       can't afford to lose it. This goes for any NFTs,
                       cryptocurrencies, stocks, and any other investment
                       influenced by market economics.
+                    </p>
+                    <p>
+                      We also respect the decision of any investors who simply
+                      want to flip their NFT for a short-term profit. This is
+                      extremely common in the NFT space and is the sole decision
+                      of the investor.
                     </p>
                   </Typography>
                 </AccordionDetails>
@@ -1016,6 +1040,13 @@ export const Faq = () => {
                     floor sweeps, and use the NFTs collected in raffles or in
                     combination with our other giveaways throughout the course
                     of the roadmap and beyond.
+                    <p>
+                      These floor sweeps will be announced on our discord server
+                      and the giveaways and raffles will also be announced on
+                      our social media accounts to attract new members into the
+                      community and retain longevity and momentum throughout the
+                      course of the roadmap.
+                    </p>
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -1063,11 +1094,11 @@ export const Faq = () => {
                 <AccordionDetails>
                   <Typography color="#989898" variant="body1">
                     There will be an owner snapshot taken approximately 30 days
-                    after the public mint date. The current date we have for the
-                    snapshot is May 8th. This will determine which holders will
-                    be airdropped their 3D NFT but this is subject to change.
-                    Any changes to this date will be announced to holders in
-                    advance.
+                    after the completion of the mint (when all NFTs are sold).
+                    This will determine which holders will be airdropped their
+                    3D NFT. Please note that this is subject to change. Any
+                    changes will be announced in our discord server in the
+                    "Announcements" channel.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
