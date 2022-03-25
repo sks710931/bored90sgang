@@ -1029,7 +1029,7 @@ contract Bored90sGang is ERC721Enumerable, Ownable {
     mapping(address => uint256) private _whiteListClaimed;
     mapping(address => uint256) private _generalClaimed;
     uint256 private _reservedCount = 0;
-    uint256 private _reserveAtATime = 50;
+    uint256 private _reserveAtATime = 10;
 
     string private notRevealedtokenUri =
         "https://ipfs.io/ipfs/QmYPhFqLhBJikRr3yTkY8A2LCwNeQJzuhVF55NtbUqjGcs";
