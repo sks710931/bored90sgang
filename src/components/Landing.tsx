@@ -63,7 +63,7 @@ export const Landing = () => {
                         </span>
                     </div>
                     <span className={classes.formtxt}>
-                        <span style={{color:"rgb(255, 98, 101)"}}>{mints}</span> / 8896 Minted
+                        <span style={{color:"rgb(255, 98, 101)"}}>0</span> / 8896 Minted
                     </span>
                 </div>
             </div>

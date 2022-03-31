@@ -29,7 +29,7 @@ export const Counter = () => {
     <div>
       <div>
         <h2 style={{color: "white"}}>
-            <span className={classes.green}>{mints}</span><span className={classes.counter}>/8896</span> Minted
+            <span className={classes.green}>0</span><span className={classes.counter}>/8896</span> Minted
         </h2>
       </div>
     </div>
